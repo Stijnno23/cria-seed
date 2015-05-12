@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # groep6s-prd keeps its data
-for db in groep6s-dev groep6s-tst groep6s-acc
+for db in groep6-dev groep6-tst groep6-acc
 do
     echo "Dropping $db"
     mongo $db --eval "db.dropDatabase()"
