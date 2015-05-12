@@ -154,7 +154,7 @@ kill -9 $node_PID 2>&1 &
 #export TEST_FAILURUES=`grep -ci 'fail' unit-tests-results.log`
 export TEST_FAILURUES=`grep -ci '"failures": 0' unit-tests-results.log`
 
-if [ -z "$TEST_FAILURUES" ]; then
+if [ -z "$TEST_FAILURUES" -ne 1 ]; then
     echo "`date` >>>>> ERRORS ERRORS ERRORS" | tee -a "$DIR/$CUR_SCRIPT"
 	echo "`date` >>>>>   Could not execute the tests. Variable is not set TEST_FAILURUES=$TEST_FAILURUES" | tee -a "$DIR/$CUR_SCRIPT"
 	git checkout $STAGE0 | tee -a "$DIR/$CUR_SCRIPT"
