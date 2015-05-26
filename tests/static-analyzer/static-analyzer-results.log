@@ -1,0 +1,1139 @@
+[H[2J*** LintRoller on /app/... ***
+*** LintRoller v2.3.5 ***
+
+Initializing linter: jslint
+Initializing linter: jshint
+Initializing linter: esprima
+
+Deleting old log file...
+Done.
+
+11 matching files found.
+
+Fix Your Errors!
+
+Writing 221 errors to new log file.
+LintRoller v2.3.5
+
+    Output for Thu May 21 2015 14:02:18 GMT+0200 (CEST)
+
+    Total files found   : 11
+    All errors reported : 221
+
+
+    12418 lines checked via JSLINT
+    12418 lines checked via JSHINT
+    12418 lines checked via ESPRIMA
+
+=============== Running JSLINT [ Total errors: 91 ] ===============
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 21
+    Char #: 34
+    Reason: Unexpected space between '(' and 'object'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 21
+    Char #: 53
+    Reason: Unexpected space between 'domElement' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 23
+    Char #: 5
+    Reason: Missing 'use strict' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 24
+    Char #: 25
+    Reason: Unexpected space between '(' and 'domElement'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 24
+    Char #: 50
+    Reason: Unexpected space between 'undefined' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 57
+    Char #: 28
+    Reason: Use spaces, not tabs.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 70
+    Char #: 30
+    Reason: Unexpected space between '-' and 'Infinity'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 87
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 89
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 90
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 91
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 93
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 94
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 95
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 96
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 98
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 100
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 101
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 102
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 104
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 105
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 106
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 107
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 108
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 109
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 111
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 112
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 114
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 116
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 126
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 126
+    Char #: 59
+    Reason: Unexpected space between '(' and 'object'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 126
+    Char #: 89
+    Reason: Unexpected space between '(' and '0'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 126
+    Char #: 97
+    Reason: Unexpected space between ')' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 126
+    Char #: 99
+    Reason: Unexpected space between ')' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 127
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 131
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 132
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 133
+    Char #: 9
+    Reason: Combine this with the previous 'var' statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 135
+    Char #: 34
+    Reason: Unexpected space between '(' and 'angle'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 135
+    Char #: 40
+    Reason: Unexpected space between 'angle' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 137
+    Char #: 14
+    Reason: Unexpected space between '(' and 'angle'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 137
+    Char #: 34
+    Reason: Unexpected space between 'undefined' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 139
+    Char #: 21
+    Reason: 'getAutoRotationAngle' was used before it was defined.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 147
+    Char #: 32
+    Reason: Unexpected space between '(' and 'angle'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 147
+    Char #: 38
+    Reason: Unexpected space between 'angle' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 149
+    Char #: 14
+    Reason: Unexpected space between '(' and 'angle'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 149
+    Char #: 34
+    Reason: Unexpected space between 'undefined' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 151
+    Char #: 21
+    Reason: 'getAutoRotationAngle' was used before it was defined.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 160
+    Char #: 31
+    Reason: Unexpected space between '(' and 'distance'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 160
+    Char #: 40
+    Reason: Unexpected space between 'distance' and ')'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 160
+    Char #: 40
+    Reason: Too many errors. (22% scanned).
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 7
+    Char #: 47
+    Reason: Unexpected assignment expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 7
+    Char #: 1
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 9
+    Char #: 39
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 8
+    Char #: 36
+    Reason: Unexpected assignment expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 8
+    Char #: 1
+    Reason: Expected 'undefined' and instead saw 'void'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 12
+    Char #: 42
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 15
+    Char #: 43
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 18
+    Char #: 44
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 108
+    Char #: 21
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 112
+    Char #: 23
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 115
+    Char #: 88
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 116
+    Char #: 6
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 121
+    Char #: 30
+    Reason: Empty block.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 123
+    Char #: 31
+    Reason: Empty block.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 125
+    Char #: 38
+    Reason: Empty block.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 127
+    Char #: 32
+    Reason: Empty block.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 128
+    Char #: 6
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 131
+    Char #: 49
+    Reason: Use a named parameter.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 131
+    Char #: 63
+    Reason: Use a named parameter.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 131
+    Char #: 77
+    Reason: Use a named parameter.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 131
+    Char #: 104
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 134
+    Char #: 31
+    Reason: Expected 'r' at column 5, not column 31.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 134
+    Char #: 37
+    Reason: Expected 'g' at column 5, not column 37.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 134
+    Char #: 43
+    Reason: Expected 'b' at column 5, not column 43.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 134
+    Char #: 49
+    Reason: Expected 'set' at column 5, not column 49.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 135
+    Char #: 9
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 136
+    Char #: 20
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 137
+    Char #: 8
+    Reason: Expected 'setHex' at column 5, not column 8.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 139
+    Char #: 21
+    Reason: Unexpected '>>'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 139
+    Char #: 27
+    Reason: Unexpected '&'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 140
+    Char #: 21
+    Reason: Unexpected '>>'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 140
+    Char #: 26
+    Reason: Unexpected '&'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 141
+    Char #: 21
+    Reason: Unexpected '&'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 142
+    Char #: 20
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 143
+    Char #: 8
+    Reason: Expected 'setRGB' at column 5, not column 8.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 147
+    Char #: 20
+    Reason: Expected ';' and instead saw '}'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 148
+    Char #: 8
+    Reason: Expected 'setHSL' at column 5, not column 8.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 149
+    Char #: 21
+    Reason: Expected exactly one space between ')' and 'this'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 149
+    Char #: 21
+    Reason: Expected '{' and instead saw 'this'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 149
+    Char #: 21
+    Reason: Stopping. (1% scanned).
+
+=============== Running JSHINT [ Total errors: 129 ] ===============
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 23
+    Char #: 5
+    Reason: Missing "use strict" statement.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 336
+    Char #: 13
+    Reason: Bad line breaking before '||'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 371
+    Char #: 21
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 389
+    Char #: 40
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 393
+    Char #: 44
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 400
+    Char #: 42
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 407
+    Char #: 41
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 425
+    Char #: 40
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 433
+    Char #: 44
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 448
+    Char #: 42
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 467
+    Char #: 41
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 478
+    Char #: 37
+    Reason: Expected '{' and instead saw 'scope'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 484
+    Char #: 40
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 495
+    Char #: 89
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 530
+    Char #: 89
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 560
+    Char #: 40
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 566
+    Char #: 48
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 575
+    Char #: 46
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 587
+    Char #: 45
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 600
+    Char #: 37
+    Reason: Expected '{' and instead saw 'scope'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 606
+    Char #: 40
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 617
+    Char #: 48
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 618
+    Char #: 53
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 635
+    Char #: 46
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 636
+    Char #: 52
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 662
+    Char #: 45
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 663
+    Char #: 50
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/OrbitControls.js
+    Line #: 685
+    Char #: 40
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 5
+    Char #: 1
+    Reason: Use the function form of "use strict".
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 7
+    Char #: 54
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 9
+    Char #: 39
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 10
+    Char #: 2
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 12
+    Char #: 42
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 15
+    Char #: 43
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 18
+    Char #: 44
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 108
+    Char #: 21
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 112
+    Char #: 23
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 115
+    Char #: 88
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 116
+    Char #: 6
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 128
+    Char #: 6
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 131
+    Char #: 104
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 135
+    Char #: 132
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 136
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 139
+    Char #: 21
+    Reason: Unexpected use of '>>'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 139
+    Char #: 27
+    Reason: Unexpected use of '&'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 140
+    Char #: 21
+    Reason: Unexpected use of '>>'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 140
+    Char #: 26
+    Reason: Unexpected use of '&'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 141
+    Char #: 21
+    Reason: Unexpected use of '&'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 142
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 147
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 149
+    Char #: 21
+    Reason: Expected '{' and instead saw 'this'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 151
+    Char #: 33
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 152
+    Char #: 33
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 154
+    Char #: 23
+    Reason: A leading decimal point can be confused with a dot: '.5'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 154
+    Char #: 79
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 156
+    Char #: 19
+    Reason: A leading decimal point can be confused with a dot: '.5'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 160
+    Char #: 40
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 162
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 164
+    Char #: 55
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 165
+    Char #: 61
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 167
+    Char #: 42
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 168
+    Char #: 59
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 169
+    Char #: 32
+    Reason: Expected '{' and instead saw 'return'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 169
+    Char #: 80
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 175
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 177
+    Char #: 31
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 181
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 183
+    Char #: 31
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 188
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 194
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 200
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 202
+    Char #: 29
+    Reason: Unexpected use of '<<'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 202
+    Char #: 35
+    Reason: Unexpected use of '^'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 202
+    Char #: 50
+    Reason: Unexpected use of '<<'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 202
+    Char #: 55
+    Reason: Unexpected use of '^'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 202
+    Char #: 70
+    Reason: Unexpected use of '<<'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 202
+    Char #: 74
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 204
+    Char #: 65
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 208
+    Char #: 21
+    Reason: Expected '{' and instead saw 'f'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 209
+    Char #: 30
+    Reason: 'f' is already defined.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 209
+    Char #: 34
+    Reason: A leading decimal point can be confused with a dot: '.5'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 218
+    Char #: 40
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 220
+    Char #: 19
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 225
+    Char #: 17
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 228
+    Char #: 27
+    Reason: Unexpected use of '|'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 228
+    Char #: 54
+    Reason: Unexpected use of '|'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 228
+    Char #: 81
+    Reason: Unexpected use of '|'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 228
+    Char #: 91
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 235
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 240
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 245
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 250
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 255
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 260
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 265
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 267
+    Char #: 66
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 272
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 274
+    Char #: 32
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 275
+    Char #: 31
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 279
+    Char #: 17
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 281
+    Char #: 27
+    Reason: Missing '()' invoking a constructor.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 281
+    Char #: 64
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 437
+    Char #: 35
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 441
+    Char #: 23
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 444
+    Char #: 32
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 446
+    Char #: 23
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 449
+    Char #: 32
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 451
+    Char #: 23
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 454
+    Char #: 32
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 456
+    Char #: 23
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 459
+    Char #: 32
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 466
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 473
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 475
+    Char #: 13
+    Reason: Confusing use of '!'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 475
+    Char #: 45
+    Reason: Expected '{' and instead saw 'throw'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 478
+    Char #: 688
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 479
+    Char #: 13
+    Reason: Confusing use of '!'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 479
+    Char #: 22
+    Reason: Expected '{' and instead saw 'this'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 480
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 489
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 493
+    Char #: 75
+    Reason: 'b' is already defined.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 494
+    Char #: 24
+    Reason: A leading decimal point can be confused with a dot: '.5'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 494
+    Char #: 58
+    Reason: A leading decimal point can be confused with a dot: '.25'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 494
+    Char #: 223
+    Reason: A leading decimal point can be confused with a dot: '.25'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 495
+    Char #: 16
+    Reason: A leading decimal point can be confused with a dot: '.25'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 495
+    Char #: 164
+    Reason: A leading decimal point can be confused with a dot: '.25'.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 495
+    Char #: 168
+    Reason: Expected an assignment or function call and instead saw an expression.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 497
+    Char #: 20
+    Reason: Missing semicolon.
+
+../../client/javascripts/modelviewer/three.min.js
+    Line #: 497
+    Char #: 20
+    Reason: Too many errors. (4% scanned).
+
+=============== Running ESPRIMA [ Total errors: 1 ] ===============
+
+../../client/javascripts/modelviewer/models/treehouse_logo.js
+    Line #: 4
+    Char #: 1
+    Reason: Line 4: Unexpected token :
+
+

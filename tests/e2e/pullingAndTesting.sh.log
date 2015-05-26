@@ -1,0 +1,10 @@
+Tue May 19 14:29:21 CEST 2015 Current directory = /home/stijn/cria-seed/tests/e2e. It should end with e2e.
+Tue May 19 14:29:21 CEST 2015 Running the e2e tests.
+Tue May 19 14:29:35 CEST 2015 Finished the e2e tests.
+Tue May 19 14:29:35 CEST 2015 Killing Node.js id=25612
+Tue May 19 14:29:35 CEST 2015 No need to kill Selenium. It keeps on running with id=25642
+Tue May 19 14:48:43 CEST 2015 Current directory = /home/stijn/cria-seed/tests/e2e. It should end with e2e.
+Tue May 19 14:48:43 CEST 2015 Running the e2e tests.
+Tue May 19 14:48:57 CEST 2015 Finished the e2e tests.
+Tue May 19 14:48:57 CEST 2015 Killing Node.js id=28201
+Tue May 19 14:48:57 CEST 2015 No need to kill Selenium. It keeps on running with id=28233

@@ -1,0 +1,90 @@
+{
+  "stats": {
+    "suites": 7,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2015-05-19T12:48:35.790Z",
+    "end": "2015-05-19T12:48:35.846Z",
+    "duration": 56
+  },
+  "tests": [
+    {
+      "title": "Should POST /books",
+      "fullTitle": "API Routing for CRUD operations on books CREATE book Should POST /books",
+      "duration": 30,
+      "err": {}
+    },
+    {
+      "title": "Should GET /books",
+      "fullTitle": "API Routing for CRUD operations on books RETRIEVE all books Should GET /books",
+      "duration": 9,
+      "err": {}
+    },
+    {
+      "title": "Should GET /books/{id}",
+      "fullTitle": "API Routing for CRUD operations on books RETRIEVE 1 book Should GET /books/{id}",
+      "duration": 5,
+      "err": {}
+    },
+    {
+      "title": "Should PUT /books/{id}",
+      "fullTitle": "API Routing for CRUD operations on books UPDATE 1 book Should PUT /books/{id}",
+      "duration": 4,
+      "err": {}
+    },
+    {
+      "title": "Should DELETE /books/{id}",
+      "fullTitle": "API Routing for CRUD operations on books DELETE 1 book Should DELETE /books/{id}",
+      "duration": 2,
+      "err": {}
+    },
+    {
+      "title": "Should GET /books",
+      "fullTitle": "API Routing for CRUD operations on books RETRIEVE all books to verify that the original collection is restored. Should GET /books",
+      "duration": 3,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "Should POST /books",
+      "fullTitle": "API Routing for CRUD operations on books CREATE book Should POST /books",
+      "duration": 30,
+      "err": {}
+    },
+    {
+      "title": "Should GET /books",
+      "fullTitle": "API Routing for CRUD operations on books RETRIEVE all books Should GET /books",
+      "duration": 9,
+      "err": {}
+    },
+    {
+      "title": "Should GET /books/{id}",
+      "fullTitle": "API Routing for CRUD operations on books RETRIEVE 1 book Should GET /books/{id}",
+      "duration": 5,
+      "err": {}
+    },
+    {
+      "title": "Should PUT /books/{id}",
+      "fullTitle": "API Routing for CRUD operations on books UPDATE 1 book Should PUT /books/{id}",
+      "duration": 4,
+      "err": {}
+    },
+    {
+      "title": "Should DELETE /books/{id}",
+      "fullTitle": "API Routing for CRUD operations on books DELETE 1 book Should DELETE /books/{id}",
+      "duration": 2,
+      "err": {}
+    },
+    {
+      "title": "Should GET /books",
+      "fullTitle": "API Routing for CRUD operations on books RETRIEVE all books to verify that the original collection is restored. Should GET /books",
+      "duration": 3,
+      "err": {}
+    }
+  ]
+}

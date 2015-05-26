@@ -1,0 +1,257 @@
+Thu May 21 14:02:14 CEST 2015 ******************************** New log
+Thu May 21 14:02:14 CEST 2015 Executed by /bin/sh
+Thu May 21 14:02:14 CEST 2015 -------------------------------------------------------------------------------
+Thu May 21 14:02:14 CEST 2015 - Preflight checks
+Thu May 21 14:02:14 CEST 2015 -------------------------------------------------------------------------------
+Thu May 21 14:02:14 CEST 2015 Writing process id = 9141 to pid file.
+Thu May 21 14:02:14 CEST 2015 Make sure jslint is installed
+Thu May 21 14:02:14 CEST 2015 Resetting data sets.
+Dropping groep6-dev
+MongoDB shell version: 2.4.13
+connecting to: groep6-dev
+[object Object]
+Restoring groep6-dev
+Thu May 21 14:02:14.254 ERROR: don't know what to do with file [seed]
+Dropping groep6-tst
+MongoDB shell version: 2.4.13
+connecting to: groep6-tst
+[object Object]
+Restoring groep6-tst
+Thu May 21 14:02:14.294 ERROR: don't know what to do with file [seed]
+Dropping groep6-acc
+MongoDB shell version: 2.4.13
+connecting to: groep6-acc
+[object Object]
+Restoring groep6-acc
+Thu May 21 14:02:14.334 ERROR: don't know what to do with file [seed]
+
+Thu May 21 14:02:14 CEST 2015 -------------------------------------------------------------------------------
+Thu May 21 14:02:14 CEST 2015 - STAGE0, development
+Thu May 21 14:02:14 CEST 2015 -------------------------------------------------------------------------------
+
+Your branch is up-to-date with 'origin/development'.
+Updating 4e0e3a7..f93944b
+Fast-forward
+ .bowerrc                                           |   3 +
+ .csslintrc                                         |  15 ++
+ .editorconfig                                      |  39 ++-
+ .gitignore                                         | 143 +----------
+ .jshintrc                                          |  42 ++++
+ .slugignore                                        |   1 +
+ .travis.yml                                        |   7 +
+ Dockerfile                                         |  29 +++
+ LICENSE.md                                         |  21 ++
+ Procfile                                           |   1 +
+ README.md                                          | 201 ++++++++-------
+ app/controllers/articles.server.controller.js      | 109 +++++++++
+ app/controllers/core.server.controller.js          |  11 +
+ app/controllers/errors.server.controller.js        |  42 ++++
+ app/controllers/users.server.controller.js         |  16 ++
+ .../users.authentication.server.controller.js      | 206 ++++++++++++++++
+ .../users/users.authorization.server.controller.js |  54 +++++
+ .../users/users.password.server.controller.js      | 245 +++++++++++++++++++
+ .../users/users.profile.server.controller.js       |  56 +++++
+ app/models/article.server.model.js                 |  34 +++
+ app/models/user.server.model.js                    | 146 +++++++++++
+ app/routes/articles.server.routes.js               |  22 ++
+ app/routes/core.server.routes.js                   |   7 +
+ app/routes/users.server.routes.js                  |  57 +++++
+ app/tests/article.server.model.test.js             |  64 +++++
+ app/tests/article.server.routes.test.js            | 269 +++++++++++++++++++++
+ app/tests/user.server.model.test.js                |  75 ++++++
+ app/views/404.server.view.html                     |   8 +
+ app/views/500.server.view.html                     |   8 +
+ app/views/index.server.view.html                   |   5 +
+ app/views/layout.server.view.html                  |  68 ++++++
+ .../reset-password-confirm-email.server.view.html  |  13 +
+ .../reset-password-email.server.view.html          |  18 ++
+ bower.json                                         |  17 ++
+ config/config.js                                   |  76 ++++++
+ config/env/all.js                                  |  44 ++++
+ config/env/development.js                          |  43 ++++
+ config/env/production.js                           |  60 +++++
+ config/env/secure.js                               |  59 +++++
+ config/env/test.js                                 |  44 ++++
+ config/express.js                                  | 163 +++++++++++++
+ config/init.js                                     |  33 +++
+ config/passport.js                                 |  33 +++
+ config/strategies/facebook.js                      |  42 ++++
+ config/strategies/github.js                        |  40 +++
+ config/strategies/google.js                        |  42 ++++
+ config/strategies/linkedin.js                      |  43 ++++
+ config/strategies/local.js                         |  38 +++
+ config/strategies/twitter.js                       |  39 +++
+ fig.yml                                            |  12 +
+ generate-ssl-certs.sh                              |   7 +
+ gruntfile.js                                       | 177 ++++++++++++++
+ gulpfile.js                                        |   5 +-
+ karma.conf.js                                      |  52 ++++
+ package.json                                       |  68 ++++++
+ public/application.js                              |  20 ++
+ public/config.js                                   |  23 ++
+ public/humans.txt                                  |  15 ++
+ public/modules/articles/articles.client.module.js  |   4 +
+ .../articles/config/articles.client.config.js      |  11 +
+ .../articles/config/articles.client.routes.js      |  25 ++
+ .../controllers/articles.client.controller.js      |  58 +++++
+ .../articles/services/articles.client.service.js   |  14 ++
+ .../tests/articles.client.controller.test.js       | 170 +++++++++++++
+ .../articles/views/create-article.client.view.html |  29 +++
+ .../articles/views/edit-article.client.view.html   |  35 +++
+ .../articles/views/list-articles.client.view.html  |  20 ++
+ .../articles/views/view-article.client.view.html   |  22 ++
+ public/modules/core/config/core.client.routes.js   |  16 ++
+ .../core/controllers/header.client.controller.js   |  18 ++
+ .../core/controllers/home.client.controller.js     |   9 +
+ public/modules/core/core.client.module.js          |   4 +
+ public/modules/core/css/core.css                   |  15 ++
+ public/modules/core/img/brand/favicon.ico          | Bin 0 -> 32038 bytes
+ public/modules/core/img/brand/logo.png             | Bin 0 -> 14055 bytes
+ public/modules/core/img/loaders/loader.gif         | Bin 0 -> 13980 bytes
+ .../modules/core/services/menus.client.service.js  | 166 +++++++++++++
+ .../core/tests/header.client.controller.test.js    |  24 ++
+ .../core/tests/home.client.controller.test.js      |  24 ++
+ public/modules/core/views/header.client.view.html  |  58 +++++
+ public/modules/core/views/home.client.view.html    |  94 +++++++
+ public/modules/users/config/users.client.config.js |  30 +++
+ public/modules/users/config/users.client.routes.js |  45 ++++
+ .../authentication.client.controller.js            |  34 +++
+ .../controllers/password.client.controller.js      |  44 ++++
+ .../controllers/settings.client.controller.js      |  71 ++++++
+ public/modules/users/css/users.css                 |  14 ++
+ public/modules/users/img/buttons/facebook.png      | Bin 0 -> 1024 bytes
+ public/modules/users/img/buttons/github.png        | Bin 0 -> 2618 bytes
+ public/modules/users/img/buttons/google.png        | Bin 0 -> 3713 bytes
+ public/modules/users/img/buttons/linkedin.png      | Bin 0 -> 1506 bytes
+ public/modules/users/img/buttons/twitter.png       | Bin 0 -> 2181 bytes
+ .../services/authentication.client.service.js      |  14 ++
+ .../modules/users/services/users.client.service.js |  12 +
+ .../tests/authentication.client.controller.test.js | 118 +++++++++
+ public/modules/users/users.client.module.js        |   4 +
+ .../views/authentication/signin.client.view.html   |  45 ++++
+ .../views/authentication/signup.client.view.html   |  54 +++++
+ .../password/forgot-password.client.view.html      |  22 ++
+ .../reset-password-invalid.client.view.html        |   4 +
+ .../reset-password-success.client.view.html        |   4 +
+ .../views/password/reset-password.client.view.html |  26 ++
+ .../settings/change-password.client.view.html      |  30 +++
+ .../views/settings/edit-profile.client.view.html   |  34 +++
+ .../settings/social-accounts.client.view.html      |  29 +++
+ public/robots.txt                                  |   3 +
+ server.js                                          |  36 +++
+ server/config/config.js                            |  31 +++
+ server/package.json                                |   2 +-
+ 109 files changed, 4518 insertions(+), 234 deletions(-)
+ create mode 100644 .bowerrc
+ create mode 100644 .csslintrc
+ create mode 100644 .jshintrc
+ create mode 100644 .slugignore
+ create mode 100644 .travis.yml
+ create mode 100644 Dockerfile
+ create mode 100644 LICENSE.md
+ create mode 100644 Procfile
+ create mode 100644 app/controllers/articles.server.controller.js
+ create mode 100644 app/controllers/core.server.controller.js
+ create mode 100644 app/controllers/errors.server.controller.js
+ create mode 100644 app/controllers/users.server.controller.js
+ create mode 100644 app/controllers/users/users.authentication.server.controller.js
+ create mode 100644 app/controllers/users/users.authorization.server.controller.js
+ create mode 100644 app/controllers/users/users.password.server.controller.js
+ create mode 100644 app/controllers/users/users.profile.server.controller.js
+ create mode 100644 app/models/article.server.model.js
+ create mode 100644 app/models/user.server.model.js
+ create mode 100644 app/routes/articles.server.routes.js
+ create mode 100644 app/routes/core.server.routes.js
+ create mode 100644 app/routes/users.server.routes.js
+ create mode 100644 app/tests/article.server.model.test.js
+ create mode 100644 app/tests/article.server.routes.test.js
+ create mode 100644 app/tests/user.server.model.test.js
+ create mode 100644 app/views/404.server.view.html
+ create mode 100644 app/views/500.server.view.html
+ create mode 100644 app/views/index.server.view.html
+ create mode 100644 app/views/layout.server.view.html
+ create mode 100644 app/views/templates/reset-password-confirm-email.server.view.html
+ create mode 100644 app/views/templates/reset-password-email.server.view.html
+ create mode 100644 bower.json
+ create mode 100644 config/config.js
+ create mode 100644 config/env/all.js
+ create mode 100644 config/env/development.js
+ create mode 100644 config/env/production.js
+ create mode 100644 config/env/secure.js
+ create mode 100644 config/env/test.js
+ create mode 100644 config/express.js
+ create mode 100644 config/init.js
+ create mode 100644 config/passport.js
+ create mode 100644 config/strategies/facebook.js
+ create mode 100644 config/strategies/github.js
+ create mode 100644 config/strategies/google.js
+ create mode 100644 config/strategies/linkedin.js
+ create mode 100644 config/strategies/local.js
+ create mode 100644 config/strategies/twitter.js
+ create mode 100644 fig.yml
+ create mode 100644 generate-ssl-certs.sh
+ create mode 100644 gruntfile.js
+ create mode 100644 karma.conf.js
+ create mode 100644 package.json
+ create mode 100644 public/application.js
+ create mode 100644 public/config.js
+ create mode 100644 public/humans.txt
+ create mode 100644 public/modules/articles/articles.client.module.js
+ create mode 100644 public/modules/articles/config/articles.client.config.js
+ create mode 100644 public/modules/articles/config/articles.client.routes.js
+ create mode 100644 public/modules/articles/controllers/articles.client.controller.js
+ create mode 100644 public/modules/articles/services/articles.client.service.js
+ create mode 100644 public/modules/articles/tests/articles.client.controller.test.js
+ create mode 100644 public/modules/articles/views/create-article.client.view.html
+ create mode 100644 public/modules/articles/views/edit-article.client.view.html
+ create mode 100644 public/modules/articles/views/list-articles.client.view.html
+ create mode 100644 public/modules/articles/views/view-article.client.view.html
+ create mode 100644 public/modules/core/config/core.client.routes.js
+ create mode 100644 public/modules/core/controllers/header.client.controller.js
+ create mode 100644 public/modules/core/controllers/home.client.controller.js
+ create mode 100644 public/modules/core/core.client.module.js
+ create mode 100644 public/modules/core/css/core.css
+ create mode 100644 public/modules/core/img/brand/favicon.ico
+ create mode 100644 public/modules/core/img/brand/logo.png
+ create mode 100644 public/modules/core/img/loaders/loader.gif
+ create mode 100644 public/modules/core/services/menus.client.service.js
+ create mode 100644 public/modules/core/tests/header.client.controller.test.js
+ create mode 100644 public/modules/core/tests/home.client.controller.test.js
+ create mode 100644 public/modules/core/views/header.client.view.html
+ create mode 100644 public/modules/core/views/home.client.view.html
+ create mode 100644 public/modules/users/config/users.client.config.js
+ create mode 100644 public/modules/users/config/users.client.routes.js
+ create mode 100644 public/modules/users/controllers/authentication.client.controller.js
+ create mode 100644 public/modules/users/controllers/password.client.controller.js
+ create mode 100644 public/modules/users/controllers/settings.client.controller.js
+ create mode 100644 public/modules/users/css/users.css
+ create mode 100644 public/modules/users/img/buttons/facebook.png
+ create mode 100644 public/modules/users/img/buttons/github.png
+ create mode 100644 public/modules/users/img/buttons/google.png
+ create mode 100644 public/modules/users/img/buttons/linkedin.png
+ create mode 100644 public/modules/users/img/buttons/twitter.png
+ create mode 100644 public/modules/users/services/authentication.client.service.js
+ create mode 100644 public/modules/users/services/users.client.service.js
+ create mode 100644 public/modules/users/tests/authentication.client.controller.test.js
+ create mode 100644 public/modules/users/users.client.module.js
+ create mode 100644 public/modules/users/views/authentication/signin.client.view.html
+ create mode 100644 public/modules/users/views/authentication/signup.client.view.html
+ create mode 100644 public/modules/users/views/password/forgot-password.client.view.html
+ create mode 100644 public/modules/users/views/password/reset-password-invalid.client.view.html
+ create mode 100644 public/modules/users/views/password/reset-password-success.client.view.html
+ create mode 100644 public/modules/users/views/password/reset-password.client.view.html
+ create mode 100644 public/modules/users/views/settings/change-password.client.view.html
+ create mode 100644 public/modules/users/views/settings/edit-profile.client.view.html
+ create mode 100644 public/modules/users/views/settings/social-accounts.client.view.html
+ create mode 100644 public/robots.txt
+ create mode 100644 server.js
+ create mode 100644 server/config/config.js
+
+Thu May 21 14:02:16 CEST 2015 -------------------------------------------------------------------------------
+Thu May 21 14:02:16 CEST 2015 - STAGE1, static-analyzer
+Thu May 21 14:02:16 CEST 2015 -------------------------------------------------------------------------------
+
+Your branch is up-to-date with 'origin/test-static-analyzer-passed'.
+Thu May 21 14:02:18 CEST 2015 >>>>> ERRORS: No commit for branch 'test' was performed.
+Thu May 21 14:02:18 CEST 2015 >>>>>   Resolve the conflicts before continuing.
+Your branch is up-to-date with 'origin/development'.
