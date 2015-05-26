@@ -22,6 +22,13 @@ var validateLocalStrategyPassword = function(password) {
 };
 
 /**
+ * A Validation function for local strategy postal code
+ */
+var validateLocalStrategyPostalCode= function(postalcode) {
+	return (this.provider !== 'local' || (postalcode && postalcode.length == 6));
+};
+
+/**
  * User Schema
  */
 var UserSchema = new Schema({
@@ -43,8 +50,8 @@ var UserSchema = new Schema({
 	},
 	email: {
 		type: String,
+		required: 'Vul een email in',
 		trim: true,
-		default: '',
 		validate: [validateLocalStrategyProperty, 'Vul een emailadres in'],
 		match: [/.+\@.+\..+/, 'Vul een geldig emailadres in']
 	},
@@ -54,8 +61,22 @@ var UserSchema = new Schema({
 		required: 'Vul een asielnaam in',
 		trim: true
 	},
+	adress: {
+		type: String,
+		required: 'Vul een adres in',
+		default: '',
+		trim: true
+	},
+	postalcode: {
+		type: String,
+		required: 'Vul een postcode in',
+		trim: true,
+		default: '',
+		validate: [validateLocalStrategyPostalCode, 'Vul uw postcode correct in. Gelieve geen spaties te gebruiken']
+	},
 	password: {
 		type: String,
+		required: 'Vul een wachtwoord in',
 		default: '',
 		validate: [validateLocalStrategyPassword, 'Het wachtwoord is te kort. Gelieve langer dan 6 tekens']
 	},
