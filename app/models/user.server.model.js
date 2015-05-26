@@ -25,18 +25,18 @@ var validateLocalStrategyPassword = function(password) {
  * User Schema
  */
 var UserSchema = new Schema({
-	firstName: {
-		type: String,
-		trim: true,
-		default: '',
-		validate: [validateLocalStrategyProperty, 'Please fill in your first name']
-	},
-	lastName: {
-		type: String,
-		trim: true,
-		default: '',
-		validate: [validateLocalStrategyProperty, 'Please fill in your last name']
-	},
+	//firstName: {
+	//	type: String,
+	//	trim: true,
+	//	default: '',
+	//	validate: [validateLocalStrategyProperty, 'Please fill in your first name']
+	//},
+	//lastName: {
+	//	type: String,
+	//	trim: true,
+	//	default: '',
+	//	validate: [validateLocalStrategyProperty, 'Please fill in your last name']
+	//},
 	displayName: {
 		type: String,
 		trim: true
@@ -45,19 +45,19 @@ var UserSchema = new Schema({
 		type: String,
 		trim: true,
 		default: '',
-		validate: [validateLocalStrategyProperty, 'Please fill in your email'],
-		match: [/.+\@.+\..+/, 'Please fill a valid email address']
+		validate: [validateLocalStrategyProperty, 'Vul een emailadres in'],
+		match: [/.+\@.+\..+/, 'Vul een geldig emailadres in']
 	},
 	username: {
 		type: String,
 		unique: 'testing error message',
-		required: 'Please fill in a username',
+		required: 'Vul een asielnaam in',
 		trim: true
 	},
 	password: {
 		type: String,
 		default: '',
-		validate: [validateLocalStrategyPassword, 'Password should be longer']
+		validate: [validateLocalStrategyPassword, 'Het wachtwoord is te kort. Gelieve langer dan 6 tekens']
 	},
 	salt: {
 		type: String
