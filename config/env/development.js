@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-	db: 'mongodb://localhost/animania-dev',
+	db: 'mongodb://server3.tezzt.nl:27017/ProjectAnimania',
 	app: {
 		title: 'Animania - Development Environment'
 	},
