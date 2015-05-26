@@ -255,3 +255,15 @@ Your branch is up-to-date with 'origin/test-static-analyzer-passed'.
 Thu May 21 14:02:18 CEST 2015 >>>>> ERRORS: No commit for branch 'test' was performed.
 Thu May 21 14:02:18 CEST 2015 >>>>>   Resolve the conflicts before continuing.
 Your branch is up-to-date with 'origin/development'.
+Already up-to-date.
+
+Tue May 26 15:21:04 CEST 2015 -------------------------------------------------------------------------------
+Tue May 26 15:21:04 CEST 2015 - STAGE1, static-analyzer
+Tue May 26 15:21:04 CEST 2015 -------------------------------------------------------------------------------
+
+Tue May 26 15:21:06 CEST 2015 >>>>> ERRORS: No commit for branch 'test' was performed.
+Tue May 26 15:21:06 CEST 2015 >>>>>   Resolve the conflicts before continuing.
+M	deployment/server/pullingAndTesting.sh.log
+M	tests/static-analyzer/error_log.txt
+M	tests/static-analyzer/static-analyzer-results.log
+Your branch is up-to-date with 'origin/development'.
