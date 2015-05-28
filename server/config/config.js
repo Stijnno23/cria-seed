@@ -1,31 +1,31 @@
 /*jslint node:true*/
 module.exports = {
     deployment: {
-        port: 3333,
-        repoUrl: "https://github.com/theotheu/cria-seed",
+        port: 6051,
+        repoUrl: "https://github.com/Stijnno23/cria-seed",
         user: "theo.theunissen0@gmail.com",
-        to: "theo.theunissen@gmail.com",
+        to: "lous23@live.nl, bryanvanelden@hotmail.nl, dion_westmaas@msn.com",
         userName: "CRIA-testert",
-        password: "<topSecret!>"
+        password: "topSecret!"
     },
     development: {
         db: 'mongodb://localhost/test',    // change books with your database
-        port: 27017,                             // change with your port number
+        port: 6502,                             // change with your port number
         debug: true                             // set debug to true|false
     },
     test: {
         db: 'mongodb://localhost/books-tst',    // change books with your database
-        port: 3001,                             // change with your port number
+        port: 6503,                             // change with your port number
         debug: true                             // set debug to true|false
     },
     acceptance: {
         db: 'mongodb://localhost/books-acc',    // change books with your database
-        port: 3002,                             // change with your port number
+        port: 6504,                             // change with your port number
         debug: true                             // set debug to true|false
     },
     production: {
         db: 'mongodb://localhost/books-prd',    // change books with your database
-        port: 1337,                             // change with your port number
+        port: 6505,                             // change with your port number
         debug: false                            // set debug to true|false
     }
 };
