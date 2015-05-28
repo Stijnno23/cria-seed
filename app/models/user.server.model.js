@@ -48,6 +48,18 @@ var UserSchema = new Schema({
 		type: String,
 		trim: true
 	},
+	username: {
+		type: String,
+		unique: 'testing error message',
+		required: 'Vul een asielnaam in',
+		trim: true
+	},
+	password: {
+		type: String,
+		required: 'Vul een wachtwoord in',
+		default: '',
+		validate: [validateLocalStrategyPassword, 'Het wachtwoord is te kort. Gelieve langer dan 6 tekens']
+	},
 	email: {
 		type: String,
 		required: 'Vul een email in',
@@ -55,30 +67,34 @@ var UserSchema = new Schema({
 		validate: [validateLocalStrategyProperty, 'Vul een emailadres in'],
 		match: [/.+\@.+\..+/, 'Vul een geldig emailadres in']
 	},
-	username: {
-		type: String,
-		unique: 'testing error message',
-		required: 'Vul een asielnaam in',
-		trim: true
+	phone: {
+		type: Number,
+		required: 'Vul een telefoonnummer in'
 	},
-	adress: {
+	address: {
 		type: String,
 		required: 'Vul een adres in',
 		default: '',
 		trim: true
 	},
-	postalcode: {
+	postcode: {
 		type: String,
-		required: 'Vul een postcode in',
+		required: 'Vul een woonplaats in',
+		default: '',
 		trim: true,
-		default: '',
-		validate: [validateLocalStrategyPostalCode, 'Vul uw postcode correct in. Gelieve geen spaties te gebruiken']
+		validate: [validateLocalStrategyPostalCode, 'Vul uw postcode correct in.']
 	},
-	password: {
+	residence: {
 		type: String,
-		required: 'Vul een wachtwoord in',
+		required: 'Vul een woonplaats in',
 		default: '',
-		validate: [validateLocalStrategyPassword, 'Het wachtwoord is te kort. Gelieve langer dan 6 tekens']
+		trim: true
+	},
+	website: {
+		type: String,
+		required: 'Vul een webpagina in',
+		default: '',
+		trim: true
 	},
 	salt: {
 		type: String
