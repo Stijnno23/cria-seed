@@ -1,0 +1,92 @@
+<section data-ng-controller="CatsController" data-ng-init="findOne()">
+    <div class="page-header">
+        <h1>Edit Cat</h1>
+    </div>
+    <div class="col-md-12">
+        <form name="catForm" class="form-horizontal" data-ng-submit="update(catForm.$valid)" novalidate>
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label" for="picture">Picture</label>
+
+                    <div class="controls">
+                        <input name="picture" type="text" data-ng-model="cat.picture" id="picture" class="form-control"
+                               placeholder="picture" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="age">Age</label>
+
+                    <div class="controls">
+                        <input name="age" type="text" data-ng-model="cat.age" id="age" class="form-control"
+                               placeholder="age" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="eyeColor">Eyecolor</label>
+
+                    <div class="controls">
+                        <input name="eyeColor" type="eyeColor" data-ng-model="cat.eyecolor" id="eyeColor"
+                               class="form-control" placeholder="eyeColor" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="name">Name</label>
+
+                    <div class="controls">
+                        <input name="name" type="name" data-ng-model="cat.name" id="name" class="form-control"
+                               placeholder="name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="size">Size</label>
+
+                    <div class="controls">
+                        <input name="size" type="size" data-ng-model="cat.size" id="size" class="form-control"
+                               placeholder="size" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="gender">Gender</label>
+
+                    <div class="controls">
+                        <input name="gender" type="gender" data-ng-model="cat.gender" id="gender" class="form-control"
+                               placeholder="gender" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="breedgroup">Breedgroup</label>
+
+                    <div class="controls">
+                        <input name="breedgroup" type="breedgroup" data-ng-model="cat.breedgroup" id="breedgroup"
+                               class="form-control" placeholder="breedgroup" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="kids">Kids</label>
+
+                    <div class="controls">
+                        <input name="kids" type="kids" data-ng-model="cat.kids" id="kids" class="form-control"
+                               placeholder="kids" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="about">About</label>
+
+                    <div class="controls">
+                        <input name="about" type="about" data-ng-model="cat.about" id="about" class="form-control"
+                               placeholder="about" required>
+                    </div>
+                </div>
+                <div ng-show="submitted && catForm.content.$invalid" class="help-block">
+                    <p ng-show="catForm.content.$error.required" class="text-danger">Content is required</p>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Update" class="btn btn-default">
+                </div>
+                <div data-ng-show="error" class="text-danger">
+                    <strong data-ng-bind="error"></strong>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</section>
