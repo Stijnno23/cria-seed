@@ -21,25 +21,26 @@
 	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
 		<form name="userForm" data-ng-submit="signup()" class="signin form-horizontal" novalidate autocomplete="off">
 			<fieldset>
-				<!--<div class="form-group">-->
-					<!--<label for="Asiel">First Name</label>-->
-					<!--<input type="text" required id="Asiel" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">-->
-				<!--</div>-->
-				<!--<div class="form-group">-->
-					<!--<label for="lastName">Last Name</label>-->
-					<!--<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">-->
-				<!--</div>-->
 				<div class="form-group">
 					<label for="username">Asiel</label>
-					<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Asiel">
+					<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Arnhemse Opvang">
 				</div>
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="email" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
+					<input type="email" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="voorbeeld@email.nl">
 				</div>
 				<div class="form-group">
 					<label for="password">Wachtwoord</label>
-					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Wachtwoord">
+					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Wachtwoord123.">
+				</div>
+				<!--Eigen velden voor input-->
+				<div class="form-group">
+					<label for="adress">Adres</label>
+					<input type="text" required id="adress" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="Dorpstraat 7a">
+				</div>
+				<div class="form-group">
+					<label for="postalcode">Postcode</label>
+					<input type="text" id="postalcode" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="7895TK">
 				</div>
 				<div class="text-center form-group">
 					<button type="submit" class="btn btn-large btn-primary">Meld aan</button>&nbsp; of&nbsp;

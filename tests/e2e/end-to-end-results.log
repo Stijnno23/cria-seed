@@ -1,0 +1,405 @@
+Using the selenium server at http://localhost:4444/wd/hub
+[launcher] Running 1 instances of WebDriver
+>>>>> acceptance <<<<<
+Book test homepage
+[31m  should get the titles - fail[0m
+[31m  should count the number of books - fail[0m
+[31m  should get the first book - fail[0m
+[31m  should get the last book - fail[0m
+[31m  should filter the books and return 1 book - fail[0m
+CRUD on book
+[31m  should get the titles - fail[0m
+[31m  should display an empty form - fail[0m
+[31m  should create a book - fail[0m
+[31m  should query the new created book - fail[0m
+[31m  should update the new created book - fail[0m
+[31m  should delete the new created book - fail[0m
+
+
+Failures:
+
+  1) Book test homepage should get the titles
+   Message:
+     [31mError: Angular could not be found on the page http://localhost:3002/ : retries looking for angular exceeded[0m
+   Stacktrace:
+     Error: Angular could not be found on the page http://localhost:3002/ : retries looking for angular exceeded
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:10:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  2) Book test homepage should get the titles
+   Message:
+     [31mError while waiting for Protractor to sync with the page: "angular could not be found on the window"[0m
+   Stacktrace:
+     undefined
+
+  3) Book test homepage should count the number of books
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:10:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  4) Book test homepage should count the number of books
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:28:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  5) Book test homepage should get the first book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:10:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  6) Book test homepage should get the first book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:40:29)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:36:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  7) Book test homepage should get the last book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:10:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  8) Book test homepage should get the last book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:48:29)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:44:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  9) Book test homepage should filter the books and return 1 book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:10:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  10) Book test homepage should filter the books and return 1 book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:54:36)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].element.getAttribute.then._id (/home/stijn/cria-seed/tests/e2e/specs.js:52:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:8:1)
+
+  11) CRUD on book should get the titles
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:68:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  12) CRUD on book should get the titles
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:72:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  13) CRUD on book should display an empty form
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:68:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  14) CRUD on book should display an empty form
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:91:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  15) CRUD on book should create a book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:68:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  16) CRUD on book should create a book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:102:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  17) CRUD on book should query the new created book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:68:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  18) CRUD on book should query the new created book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:117:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  19) CRUD on book should update the new created book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:68:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  20) CRUD on book should update the new created book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:130:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  21) CRUD on book should delete the new created book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: beforeEach()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:68:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+  22) CRUD on book should delete the new created book
+   Message:
+     [31mUnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver[0m
+   Stacktrace:
+     UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at Array.forEach (native)
+From: Task: Asynchronous test function: it()
+Error
+    at [object Object].<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:180:5)
+    at Object.<anonymous> (/home/stijn/cria-seed/tests/e2e/specs.js:64:1)
+
+Finished in 12.819 seconds
+[31m11 tests, 22 assertions, 22 failures
+[0m
+
+/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:113
+  var template = new Error(this.message);
+                 ^
+UnknownError: Error communicating with the remote browser. It may have died.
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:33'
+System info: host: 'server3', ip: '192.168.100.3', os.name: 'Linux', os.arch: 'amd64', os.version: '2.6.32-32-pve', java.version: '1.7.0_80'
+Driver info: driver.version: EventFiringWebDriver
+    at new bot.Error (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/error.js:113:18)
+    at Object.bot.response.checkResponse (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/atoms/response.js:106:9)
+    at /usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/webdriver.js:377:20
+    at [object Object].promise.ControlFlow.runInFrame_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/promise.js:1877:20)
+    at [object Object].promise.Callback_.goog.defineClass.notify (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/promise.js:2464:25)
+    at [object Object].promise.Promise.notify_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/promise.js:563:12)
+    at Array.forEach (native)
+    at Object.goog.array.forEach (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/array/array.js:203:43)
+    at [object Object].promise.Promise.notifyAll_ (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/webdriver/promise.js:552:16)
+    at [object Object].goog.async.run.processWorkQueue [as _onTimeout] (/usr/lib/node_modules/protractor/node_modules/selenium-webdriver/lib/goog/async/run.js:125:21)
+[launcher] Process exited with error code 1
