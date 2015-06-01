@@ -1,11 +1,11 @@
 'use strict';
 
-angular.module('dogs').controller('DogsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Dogs',
-    function($scope, $stateParams, $location, Authentication, Dogs) {
+angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Cats',
+    function($scope, $stateParams, $location, Authentication, Cats) {
         $scope.authentication = Authentication;
 
         $scope.create = function() {
-            var dogs = new Dogs({
+            var cats = new Cats({
                 picture: this.picture,
                 age: this.age,
                 eyecolor: this.eyecolor,
@@ -16,8 +16,8 @@ angular.module('dogs').controller('DogsController', ['$scope', '$stateParams', '
                 kids: this.kids,
                 about: this.about
             });
-            dogs.$save(function(response) {
-                $location.path('dogs/' + response._id);
+            cats.$save(function(response) {
+                $location.path('cats/' + response._id);
                 $scope.picture = '';
                 $scope.age = '';
                 $scope.eyecolor = '';
@@ -32,39 +32,39 @@ angular.module('dogs').controller('DogsController', ['$scope', '$stateParams', '
             });
         };
 
-        $scope.remove = function(dog) {
-            if (dog) {
-                dog.$remove();
+        $scope.remove = function(cat) {
+            if (cat) {
+                cat.$remove();
 
-                for (var i in $scope.dogs) {
-                    if ($scope.dogs[i] === dog) {
-                        $scope.dogs.splice(i, 1);
+                for (var i in $scope.cats) {
+                    if ($scope.cats[i] === cat) {
+                        $scope.cats.splice(i, 1);
                     }
                 }
             } else {
-                $scope.dog.$remove(function() {
-                    $location.path('dogs');
+                $scope.cat.$remove(function() {
+                    $location.path('cats');
                 });
             }
         };
 
         $scope.update = function() {
-            var dog = $scope.dog;
+            var cat = $scope.cat;
 
-            dog.$update(function() {
-                $location.path('dogs/' + dog._id);
+            cat.$update(function() {
+                $location.path('cats/' + cat._id);
             }, function(errorResponse) {
                 $scope.error = errorResponse.data.message;
             });
         };
 
         $scope.find = function() {
-            $scope.dogs = Dogs.query();
+            $scope.cats = Cats.query();
         };
 
         $scope.findOne = function() {
-            $scope.dog = Dogs.get({
-                dogId: $stateParams.dogId
+            $scope.cat = Cats.get({
+                catId: $stateParams.catId
             });
 
 

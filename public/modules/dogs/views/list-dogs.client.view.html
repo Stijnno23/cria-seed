@@ -3,9 +3,9 @@
 		<h1>Dogs</h1>
 	</div>
 	<div class="list-group">
-		<a data-ng-repeat="dogs in dogs" data-ng-href="#!/dogs/{{dog._id}}" class="list-group-item">
+		<a data-ng-repeat="dogs in dogs" data-ng-href="#!/dogs/{{dogs._id}}" class="list-group-item">
 			<small class="list-group-item-text">
-				<span data-ng-bind="dogs.dogId"></span>
+				<span data-ng-bind="dogs._id"></span>
 				<span data-ng-bind="dogs.user.displayName"></span>
 			</small>
 			<h4 class="list-group-item-heading" data-ng-bind="dogs.name"></h4>

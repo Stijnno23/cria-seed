@@ -7,16 +7,16 @@ var mongoose = require('mongoose'),
     Schema = mongoose.Schema;
 
 /**
- * Dog Schema
+ * Cat Schema
  */
-var DogSchema = new Schema({
+var CatSchema = new Schema({
     created: {
         type: Date,
         default: Date.now
     },
     animaltype: {
         type: String,
-        default: 'Dog',
+        default: 'Cat',
         trim: true
     },
     isActive: {
@@ -75,4 +75,4 @@ var DogSchema = new Schema({
     }
 });
 
-mongoose.model('Dog', DogSchema);
+mongoose.model('Cat', CatSchema);
