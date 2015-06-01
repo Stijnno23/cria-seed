@@ -4,20 +4,36 @@
 		<form name="userForm" data-ng-submit="updateUserProfile(userForm.$valid)" class="signin form-horizontal" autocomplete="off">
 			<fieldset>
 				<div class="form-group">
-					<label for="firstName">First Name</label>
-					<input type="text" id="firstName" name="firstName" class="form-control" data-ng-model="user.firstName" placeholder="First Name">
+					<label for="username">Naam van het asiel</label>
+					<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Arnhemse Opvang">
 				</div>
 				<div class="form-group">
-					<label for="lastName">Last Name</label>
-					<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="user.lastName" placeholder="Last Name">
+					<label for="password">Wachtwoord</label>
+					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Wachtwoord123.">
 				</div>
 				<div class="form-group">
 					<label for="email">Email</label>
-					<input type="email" id="email" name="email" class="form-control" data-ng-model="user.email" placeholder="Email">
+					<input type="email" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="voorbeeld@email.nl">
 				</div>
 				<div class="form-group">
-					<label for="username">Username</label>
-					<input type="text" id="username" name="username" class="form-control" data-ng-model="user.username" placeholder="Username">
+					<label for="phone">Telefoon</label>
+					<input type="tel" id="phone" name="phone" class="form-control" data-ng-model="credentials.phone" placeholder="0123456789">
+				</div>
+				<div class="form-group">
+					<label for="address">Adres</label>
+					<input type="text" required id="address" name="firstName" class="form-control" data-ng-model="credentials.address" placeholder="Dorpstraat 7a">
+				</div>
+				<div class="form-group">
+					<label for="postcode">Postcode</label>
+					<input type="text" id="postcode" name="lastName" class="form-control" data-ng-model="credentials.postcode" placeholder="7895TK">
+				</div>
+				<div class="form-group">
+					<label for="residence">Woonplaats</label>
+					<input type="text" id="residence" name="residence" class="form-control" data-ng-model="credentials.residence" placeholder="Arnhem">
+				</div>
+				<div class="form-group">
+					<label for="website">Website van het asiel</label>
+					<input type="url" id="website" name="website" class="form-control" data-ng-model="credentials.website" placeholder="http://www.onzewebsite.nl/">
 				</div>
 				<div class="text-center form-group">
 					<button type="submit" class="btn btn-large btn-primary">Save Profile</button>
