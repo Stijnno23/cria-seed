@@ -33,11 +33,7 @@ exports.forgot = function(req, res, next) {
 				}, '-salt -password', function(err, user) {
 					if (!user) {
 						return res.status(400).send({
-							message: 'No account with that username has been found'
-						});
-					} else if (user.provider !== 'local') {
-						return res.status(400).send({
-							message: 'It seems like you signed up using your ' + user.provider + ' account'
+							message: 'Er is geen account met deze asielnaam gevonden'
 						});
 					} else {
 						user.resetPasswordToken = token;
@@ -50,7 +46,7 @@ exports.forgot = function(req, res, next) {
 				});
 			} else {
 				return res.status(400).send({
-					message: 'Username field must not be blank'
+					message: 'Asielnaam mag niet leeg zijn'
 				});
 			}
 		},
@@ -69,13 +65,13 @@ exports.forgot = function(req, res, next) {
 			var mailOptions = {
 				to: user.email,
 				from: config.mailer.from,
-				subject: 'Password Reset',
+				subject: 'Wachtwoord reset',
 				html: emailHTML
 			};
 			smtpTransport.sendMail(mailOptions, function(err) {
 				if (!err) {
 					res.send({
-						message: 'An email has been sent to ' + user.email + ' with further instructions.'
+						message: 'Een email is verstuurd naar ' + user.email + ' met verdere instructies.'
 					});
 				}
 
@@ -147,12 +143,12 @@ exports.reset = function(req, res, next) {
 						});
 					} else {
 						return res.status(400).send({
-							message: 'Passwords do not match'
+							message: 'Wachtwoorden komen niet overeen'
 						});
 					}
 				} else {
 					return res.status(400).send({
-						message: 'Password reset token is invalid or has expired.'
+						message: 'Wachtwoord reset teken is ongeldig of verlopen.'
 					});
 				}
 			});
@@ -171,12 +167,12 @@ exports.reset = function(req, res, next) {
 			var mailOptions = {
 				to: user.email,
 				from: config.mailer.from,
-				subject: 'Your password has been changed',
+				subject: 'Je wachtwoord is veranderd',
 				html: emailHTML
 			};
 
 			smtpTransport.sendMail(mailOptions, function(err) {
-				done(err, 'done');
+				done(err, 'klaar');
 			});
 		}
 	], function(err) {
@@ -210,7 +206,7 @@ exports.changePassword = function(req, res) {
 											res.status(400).send(err);
 										} else {
 											res.send({
-												message: 'Password changed successfully'
+												message: 'Wachtwoord succesvol veranderd'
 											});
 										}
 									});
@@ -218,28 +214,28 @@ exports.changePassword = function(req, res) {
 							});
 						} else {
 							res.status(400).send({
-								message: 'Passwords do not match'
+								message: 'Wachtwoorden komen niet overeen'
 							});
 						}
 					} else {
 						res.status(400).send({
-							message: 'Current password is incorrect'
+							message: 'Het huidige wachtwoord is incorrect'
 						});
 					}
 				} else {
 					res.status(400).send({
-						message: 'User is not found'
+						message: 'Gebruiker niet gevonden'
 					});
 				}
 			});
 		} else {
 			res.status(400).send({
-				message: 'Please provide a new password'
+				message: 'Voer een nieuw wachtwoord in'
 			});
 		}
 	} else {
 		res.status(400).send({
-			message: 'User is not signed in'
+			message: 'Gebruiker is niet ingelogd'
 		});
 	}
 };
