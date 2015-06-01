@@ -1,9 +1,9 @@
 <section data-ng-controller="DogsController" data-ng-init="findOne()">
     <div class="page-header">
-        <h1 data-ng-bind="dogs.name"></h1>
+        <h1 data-ng-bind="dog.name"></h1>
     </div>
-    <div class="pull-right" data-ng-show="authentication.user._id == article.user._id">
-        <a class="btn btn-primary" href="/#!/articles/{{article._id}}/edit">
+    <div class="pull-right" data-ng-show="authentication.user._id == dog.user._id">
+        <a class="btn btn-primary" href="/#!/dogs/{{dog._id}}/edit">
             <i class="glyphicon glyphicon-edit"></i>
         </a>
         <a class="btn btn-primary" data-ng-click="remove();">
@@ -12,9 +12,9 @@
     </div>
     <small>
         <em class="text-muted">
-            <span data-ng-bind="dogs.dogId"></span>
-            <span data-ng-bind="dogs.user.displayName"></span>
+            <span data-ng-bind="dog.dogId"></span>
+            <span data-ng-bind="dog.user.displayName"></span>
         </em>
     </small>
-    <p class="lead" data-ng-bind="dogs.about"></p>
+    <p class="lead" data-ng-bind="dog.about"></p>
 </section>

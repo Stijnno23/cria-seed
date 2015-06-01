@@ -1,30 +1,89 @@
 <section data-ng-controller="DogsController">
-	<div class="page-header">
-		<h1>New Dog</h1>
-	</div>
-	<div class="col-md-12">
-		<form name="articleForm" class="form-horizontal" data-ng-submit="create()" novalidate>
-			<fieldset>
-				<div class="form-group" ng-class="{ 'has-error': articleForm.title.$dirty && articleForm.title.$invalid }">
-					<label class="control-label" for="animaltype">Animaltype</label>
-					<div class="controls">
-						<input name="animaltype" type="text" data-ng-model="animaltype" id="animaltype" class="form-control" placeholder="animaltype" required>
-					</div>
-				</div>
+    <div class="page-header">
+        <h1>New Dog</h1>
+    </div>
+    <div class="col-md-12">
+        <form name="dogForm" class="form-horizontal" data-ng-submit="create()" novalidate>
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label" for="picture">Picture</label>
+                    <div class="controls">
+                        <textarea name="picture" data-ng-model="picture" id="picture" class="form-control"
+                                  placeholder="Picture"></textarea>
+                    </div>
+                </div>
 
-				<div class="form-group">
-					<label class="control-label" for="About">About</label>
-					<div class="controls">
-						<textarea name="About" data-ng-model="About" id="About" class="form-control" cols="30" rows="10" placeholder="About"></textarea>
-					</div>
-				</div>
-				<div class="form-group">
-					<input type="submit" class="btn btn-default">
-				</div>
-				<div data-ng-show="error" class="text-danger">
-					<strong data-ng-bind="error"></strong>
-				</div>
-			</fieldset>
-		</form>
-	</div>
+                <div class="form-group">
+                    <label class="control-label" for="age">Age</label>
+                    <div class="controls">
+                        <textarea name="age" data-ng-model="age" id="age" class="form-control"
+                                  placeholder="Age"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="eyecolor">Eyecolor</label>
+                    <div class="controls">
+                        <textarea name="eyecolor" data-ng-model="eyecolor" id="eyecolor" class="form-control"
+                                  placeholder="Eyecolor"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="name">Name</label>
+                    <div class="controls">
+                        <textarea name="name" data-ng-model="name" id="name" class="form-control"
+                                  placeholder="Name"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="gender">Gender</label>
+                    <div class="controls">
+                        <textarea name="gender" data-ng-model="gender" id="gender" class="form-control"
+                                  placeholder="Gender"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="size">Size</label>
+                    <div class="controls">
+                        <textarea name="size" data-ng-model="size" id="size" class="form-control"
+                                  placeholder="Size"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="breedgroup">Breedgroup</label>
+                    <div class="controls">
+                        <textarea name="breedgroup" data-ng-model="breedgroup" id="breedgroup" class="form-control"
+                                  placeholder="Breedgroup"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="kids">Kids</label>
+                    <div class="controls">
+                        <textarea name="kids" data-ng-model="kids" id="kids" class="form-control"
+                                  placeholder="Kids"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label" for="about">About</label>
+                    <div class="controls">
+                        <textarea name="about" data-ng-model="about" id="about" class="form-control"
+                                  placeholder="About"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default">
+                </div>
+                <div data-ng-show="error" class="text-danger">
+                    <strong data-ng-bind="error"></strong>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </section>
