@@ -36,11 +36,11 @@
      * @see http://mongoosejs.com/docs/guide.html#collection
      */
     schemaName = new Schema({
-        title: {type: String, required: true, unique: true},
-        author: {type: String, required: true},
-        description: {type: String},
-        modificationDate: {type: Date, "default": Date.now}
-    },
+            title: {type: String, required: true, unique: true},
+            author: {type: String, required: true},
+            description: {type: String},
+            modificationDate: {type: Date, "default": Date.now}
+        },
         {collection: 'books'});
 
     /**
