@@ -6,14 +6,21 @@ var config = {
 
         //recursively include JS files in these folders
         filepaths: [
-            '../../client/javascripts/',
-            '../../server/'
+            '../../app/',
+            '../../public/'
         ],
 
         //but ignore anything in these folders
         exclusions: [
-            '../../server/node_modules/',
-            '../../client/javascripts/lib/'
+            '../../app/views/',
+            '../../public/modules/cats/views/',
+            '../../public/modules/dogs/views/',
+            '../../public/modules/core/css/',
+            '../../public/modules/core/img/',
+            '../../public/modules/core/views/',
+            '../../public/modules/users/css/',
+            '../../public/modules/users/img/',
+            '../../public/modules/users/views/'
         ],
 
         linters: [

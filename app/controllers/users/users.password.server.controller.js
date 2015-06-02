@@ -1,4 +1,5 @@
-'use strict';
+/*jslint node: true */
+"use strict";
 
 /**
  * Module dependencies.
@@ -35,14 +36,13 @@ exports.forgot = function (req, res, next) {
                         return res.status(400).send({
                             message: 'Er is geen account met deze asielnaam gevonden'
                         });
-                    } else {
-                        user.resetPasswordToken = token;
-                        user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
-
-                        user.save(function (err) {
-                            done(err, token, user);
-                        });
                     }
+                    user.resetPasswordToken = token;
+                    user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
+
+                    user.save(function (err) {
+                        done(err, token, user);
+                    });
                 });
             } else {
                 return res.status(400).send({
@@ -61,13 +61,13 @@ exports.forgot = function (req, res, next) {
         },
         // If valid email, send reset email using service
         function (emailHTML, user, done) {
-            var smtpTransport = nodemailer.createTransport(config.mailer.options);
-            var mailOptions = {
-                to: user.email,
-                from: config.mailer.from,
-                subject: 'Wachtwoord reset',
-                html: emailHTML
-            };
+            var smtpTransport = nodemailer.createTransport(config.mailer.options),
+                mailOptions = {
+                    to: user.email,
+                    from: config.mailer.from,
+                    subject: 'Wachtwoord reset',
+                    html: emailHTML
+                };
             smtpTransport.sendMail(mailOptions, function (err) {
                 if (!err) {
                     res.send({
@@ -79,7 +79,9 @@ exports.forgot = function (req, res, next) {
             });
         }
     ], function (err) {
-        if (err) return next(err);
+        if (err) {
+            return next(err);
+        }
     });
 };
 
@@ -128,18 +130,17 @@ exports.reset = function (req, res, next) {
                                 return res.status(400).send({
                                     message: errorHandler.getErrorMessage(err)
                                 });
-                            } else {
-                                req.login(user, function (err) {
-                                    if (err) {
-                                        res.status(400).send(err);
-                                    } else {
-                                        // Return authenticated user
-                                        res.json(user);
-
-                                        done(err, user);
-                                    }
-                                });
                             }
+                            req.login(user, function (err) {
+                                if (err) {
+                                    res.status(400).send(err);
+                                } else {
+                                    // Return authenticated user
+                                    res.json(user);
+
+                                    done(err, user);
+                                }
+                            });
                         });
                     } else {
                         return res.status(400).send({
@@ -163,20 +164,22 @@ exports.reset = function (req, res, next) {
         },
         // If valid email, send reset email using service
         function (emailHTML, user, done) {
-            var smtpTransport = nodemailer.createTransport(config.mailer.options);
-            var mailOptions = {
-                to: user.email,
-                from: config.mailer.from,
-                subject: 'Je wachtwoord is veranderd',
-                html: emailHTML
-            };
+            var smtpTransport = nodemailer.createTransport(config.mailer.options),
+                mailOptions = {
+                    to: user.email,
+                    from: config.mailer.from,
+                    subject: 'Je wachtwoord is veranderd',
+                    html: emailHTML
+                };
 
             smtpTransport.sendMail(mailOptions, function (err) {
                 done(err, 'klaar');
             });
         }
     ], function (err) {
-        if (err) return next(err);
+        if (err) {
+            return next(err);
+        }
     });
 };
 
@@ -200,17 +203,16 @@ exports.changePassword = function (req, res) {
                                     return res.status(400).send({
                                         message: errorHandler.getErrorMessage(err)
                                     });
-                                } else {
-                                    req.login(user, function (err) {
-                                        if (err) {
-                                            res.status(400).send(err);
-                                        } else {
-                                            res.send({
-                                                message: 'Wachtwoord succesvol veranderd'
-                                            });
-                                        }
-                                    });
                                 }
+                                req.login(user, function (err) {
+                                    if (err) {
+                                        res.status(400).send(err);
+                                    } else {
+                                        res.send({
+                                            message: 'Wachtwoord succesvol veranderd'
+                                        });
+                                    }
+                                });
                             });
                         } else {
                             res.status(400).send({

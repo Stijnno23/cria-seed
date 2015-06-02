@@ -1,8 +1,10 @@
-'use strict';
+/*jslint node: true */
+/*global $, angular */
+"use strict";
 
 //Articles service used for communicating with the articles REST endpoints
 angular.module('dogs').factory('Dogs', ['$resource',
-    function($resource) {
+    function ($resource) {
         return $resource('dogs/:dogId', {
             dogId: '@_id'
         }, {
@@ -10,5 +12,5 @@ angular.module('dogs').factory('Dogs', ['$resource',
                 method: 'PUT'
             }
         });
-    }
-]);
+    }]
+    );

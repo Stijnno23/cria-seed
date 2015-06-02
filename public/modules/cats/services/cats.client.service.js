@@ -1,8 +1,10 @@
-'use strict';
+/*jslint node: true */
+/*global $, angular */
+"use strict";
 
 //Cats service used for communicating with the cats REST endpoints
 angular.module('cats').factory('Cats', ['$resource',
-    function($resource) {
+    function ($resource) {
         return $resource('cats/:catId', {
             catId: '@_id'
         }, {
@@ -11,4 +13,4 @@ angular.module('cats').factory('Cats', ['$resource',
             }
         });
     }
-]);
+    ]);

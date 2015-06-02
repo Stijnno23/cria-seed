@@ -1,4 +1,5 @@
-'use strict';
+/*jslint node: true */
+"use strict";
 
 /**
  * Module dependencies.
@@ -14,8 +15,12 @@ exports.userByID = function (req, res, next, id) {
     User.findOne({
         _id: id
     }).exec(function (err, user) {
-        if (err) { return next(err) };
-        if (!user) { return next(new Error('Failed to load User ' + id)) };
+        if (err) {
+            return next(err);
+        }
+        if (!user) {
+            return next(new Error('Failed to load User ' + id));
+        }
         req.profile = user;
         next();
     });
@@ -44,11 +49,10 @@ exports.hasAuthorization = function (roles) {
         _this.requiresLogin(req, res, function () {
             if (_.intersection(req.user.roles, roles).length) {
                 return next();
-            } else {
-                return res.status(403).send({
-                    message: 'User is not authorized'
-                });
             }
+            return res.status(403).send({
+                message: 'User is not authorized'
+            });
         });
     };
 };
