@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, describe, beforeEach, it, afterEach, after, before */
-"use strict";
+'use strict';
 
 /**
  * Module dependencies.

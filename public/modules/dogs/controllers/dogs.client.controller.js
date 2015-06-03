@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, angular */
-"use strict";
+'use strict';
 
 angular.module('dogs').controller('DogsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Dogs',
     function ($scope, $stateParams, $location, Authentication, Dogs) {

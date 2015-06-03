@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, angular */
-"use strict";
+'use strict';
 
 // Config HTTP Error Handling
 angular.module('users').config(['$httpProvider',

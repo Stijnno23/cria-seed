@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, angular */
-"use strict";
+'use strict';
 
 angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Cats',
     function ($scope, $stateParams, $location, Authentication, Cats) {

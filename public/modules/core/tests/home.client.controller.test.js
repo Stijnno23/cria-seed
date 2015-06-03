@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, describe, beforeEach, ApplicationConfiguration, inject, it, expect */
-"use strict";
+'use strict';
 
 (function () {
     describe('HomeController', function () {

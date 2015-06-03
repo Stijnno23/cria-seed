@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, describe, beforeEach, it, afterEach */
-"use strict";
+'use strict';
 
 var should = require('should'),
     request = require('supertest'),

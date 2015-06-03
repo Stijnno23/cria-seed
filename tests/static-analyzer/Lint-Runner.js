@@ -13,6 +13,7 @@ var config = {
         //but ignore anything in these folders
         exclusions: [
             '../../app/views/',
+            '../../public/lib/',
             '../../public/modules/cats/views/',
             '../../public/modules/dogs/views/',
             '../../public/modules/core/css/',

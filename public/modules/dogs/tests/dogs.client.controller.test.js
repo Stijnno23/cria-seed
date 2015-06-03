@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, describe, beforeEach, jasmine, angular, ApplicationConfiguration, inject, it, expect */
-"use strict";
+'use strict';
 
 (function () {
     // Articles Controller Spec

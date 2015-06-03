@@ -1,6 +1,6 @@
 LintRoller v2.3.5
 
-    Output for Tue Jun 02 2015 15:53:50 GMT+0200 (West-Europa (zomertijd))
+    Output for Wed Jun 03 2015 12:32:56 GMT+0200 (West-Europa (zomertijd))
 
     Total files found   : 48
     All errors reported : 10

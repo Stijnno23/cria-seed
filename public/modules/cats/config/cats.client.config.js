@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, angular */
-"use strict";
+'use strict';
 
 // Configuring the Cats module
 angular.module('cats').run(['Menus',

@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, angular, ApplicationConfiguration */
-"use strict";
+'use strict';
 
 //Menu service used for managing  menus
 angular.module('core').service('Menus', [

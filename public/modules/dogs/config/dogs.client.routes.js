@@ -1,6 +1,6 @@
 /*jslint node: true */
 /*global $, angular */
-"use strict";
+'use strict';
 
 // Setting up route
 angular.module('dogs').config(['$stateProvider',
