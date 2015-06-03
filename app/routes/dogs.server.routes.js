@@ -1,4 +1,5 @@
-'use strict';
+/*jslint node: true */
+"use strict";
 
 /**
  * Module dependencies.
@@ -6,7 +7,7 @@
 var users = require('../../app/controllers/users.server.controller'),
     dogs = require('../../app/controllers/dogs.server.controller');
 
-module.exports = function(app) {
+module.exports = function (app) {
     // Dog Routes
     app.route('/dogs')
         .get(dogs.list)

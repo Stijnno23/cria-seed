@@ -1,10 +1,12 @@
-'use strict';
+/*jslint node: true */
+/*global $, angular */
+"use strict";
 
 angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Cats',
-    function($scope, $stateParams, $location, Authentication, Cats) {
+    function ($scope, $stateParams, $location, Authentication, Cats) {
         $scope.authentication = Authentication;
 
-        $scope.create = function() {
+        $scope.create = function () {
             var cats = new Cats({
                 picture: this.picture,
                 age: this.age,
@@ -16,7 +18,7 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
                 kids: this.kids,
                 about: this.about
             });
-            cats.$save(function(response) {
+            cats.$save(function (response) {
                 $location.path('cats/' + response._id);
                 $scope.picture = '';
                 $scope.age = '';
@@ -27,42 +29,43 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
                 $scope.breedgroup = '';
                 $scope.kids = '';
                 $scope.about = '';
-            }, function(errorResponse) {
+            }, function (errorResponse) {
                 $scope.error = errorResponse.data.message;
             });
         };
 
-        $scope.remove = function(cat) {
+        $scope.remove = function (cat) {
+            var i;
             if (cat) {
                 cat.$remove();
 
-                for (var i in $scope.cats) {
+                for (i in $scope.cats) {
                     if ($scope.cats[i] === cat) {
                         $scope.cats.splice(i, 1);
                     }
                 }
             } else {
-                $scope.cat.$remove(function() {
+                $scope.cat.$remove(function () {
                     $location.path('cats');
                 });
             }
         };
 
-        $scope.update = function() {
+        $scope.update = function () {
             var cat = $scope.cat;
 
-            cat.$update(function() {
+            cat.$update(function () {
                 $location.path('cats/' + cat._id);
-            }, function(errorResponse) {
+            }, function (errorResponse) {
                 $scope.error = errorResponse.data.message;
             });
         };
 
-        $scope.find = function() {
+        $scope.find = function () {
             $scope.cats = Cats.query();
         };
 
-        $scope.findOne = function() {
+        $scope.findOne = function () {
             $scope.cat = Cats.get({
                 catId: $stateParams.catId
             });
@@ -70,4 +73,4 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
 
         };
     }
-]);
+    ]);

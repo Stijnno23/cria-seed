@@ -1,4 +1,6 @@
-'use strict';
+/*jslint node: true */
+/*global $, angular */
+"use strict";
 
 // Setting up route
 angular.module('cats').config(['$stateProvider',
@@ -22,4 +24,4 @@ angular.module('cats').config(['$stateProvider',
                 templateUrl: 'modules/cats/views/edit-cat.client.view.html'
             });
     }
-]);
+    ]);

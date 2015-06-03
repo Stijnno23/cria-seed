@@ -1,4 +1,6 @@
-'use strict';
+/*jslint node: true */
+/*global $, angular */
+"use strict";
 
 // Setting up route
 angular.module('dogs').config(['$stateProvider',
@@ -22,4 +24,4 @@ angular.module('dogs').config(['$stateProvider',
                 templateUrl: 'modules/dogs/views/edit-dogs.client.view.html'
             });
     }
-]);
+    ]);

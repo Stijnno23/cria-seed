@@ -1,24 +1,28 @@
 <section class="row" data-ng-controller="AuthenticationController">
-	<h3 class="col-md-12 text-center">Log in met je asielnaam en wachtwoord</h3>
-	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
-		<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
-			<fieldset>
-				<div class="form-group">
-					<label for="username">Asiel</label>
-					<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Asiel">
-				</div>
-				<div class="form-group">
-					<label for="password">Wachtwoord</label>
-					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Wachtwoord">
-				</div>
-				<div class="text-center form-group">
-					<button type="submit" class="btn btn-primary">Log in</button>&nbsp; of&nbsp;
-					<a href="/#!/signup">Meld aan</a>
-				</div>
-				<div data-ng-show="error" class="text-center text-danger">
-					<strong data-ng-bind="error"></strong>
-				</div>
-			</fieldset>
-		</form>
-	</div>
+    <h3 class="col-md-12 text-center">Log in met je asielnaam en wachtwoord</h3>
+
+    <div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
+        <form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
+            <fieldset>
+                <div class="form-group">
+                    <label for="username">Asiel</label>
+                    <input type="text" id="username" name="username" class="form-control"
+                           data-ng-model="credentials.username" placeholder="Asiel">
+                </div>
+                <div class="form-group">
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" id="password" name="password" class="form-control"
+                           data-ng-model="credentials.password" placeholder="Wachtwoord">
+                </div>
+                <div class="text-center form-group">
+                    <button type="submit" class="btn btn-primary">Log in</button>
+                    &nbsp; of&nbsp;
+                    <a href="/#!/signup">Meld aan</a>
+                </div>
+                <div data-ng-show="error" class="text-center text-danger">
+                    <strong data-ng-bind="error"></strong>
+                </div>
+            </fieldset>
+        </form>
+    </div>
 </section>
