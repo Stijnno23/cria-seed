@@ -14,6 +14,7 @@ var config = {
         exclusions: [
             '../../app/views/',
             '../../public/lib/',
+            '../../public/modules/modelviewer/controller/',
             '../../public/modules/cats/views/',
             '../../public/modules/dogs/views/',
             '../../public/modules/core/css/',

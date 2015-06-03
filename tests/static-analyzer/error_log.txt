@@ -1,16 +1,16 @@
 LintRoller v2.3.5
 
-    Output for Wed Jun 03 2015 12:32:56 GMT+0200 (West-Europa (zomertijd))
+    Output for Wed Jun 03 2015 13:18:33 GMT+0200 (West-Europa (zomertijd))
 
-    Total files found   : 48
-    All errors reported : 10
+    Total files found   : 53
+    All errors reported : 24
 
 
-    2892 lines checked via JSLINT
-    2892 lines checked via JSHINT
-    2892 lines checked via ESPRIMA
+    3113 lines checked via JSLINT
+    3028 lines checked via JSHINT
+    3028 lines checked via ESPRIMA
 
-=============== Running JSLINT [ Total errors: 9 ] ===============
+=============== Running JSLINT [ Total errors: 16 ] ===============
 
 ../../public/modules/core/services/menus.client.service.js
     Line #: 20
@@ -47,6 +47,41 @@ LintRoller v2.3.5
     Char #: 13
     Reason: Unused 'ArticlesController'.
 
+../../public/modules/modelviewer/config/modelviewer.client.config.js
+    Line #: 4
+    Char #: 1
+    Reason: 'angular' was used before it was defined.
+
+../../public/modules/modelviewer/config/modelviewer.client.config.js
+    Line #: 5
+    Char #: 13
+    Reason: Expected exactly one space between 'function' and '('.
+
+../../public/modules/modelviewer/config/modelviewer.client.config.js
+    Line #: 11
+    Char #: 1
+    Reason: Expected ']' at column 5, not column 1.
+
+../../public/modules/modelviewer/config/modelviewer.client.routes.js
+    Line #: 4
+    Char #: 1
+    Reason: 'angular' was used before it was defined.
+
+../../public/modules/modelviewer/config/modelviewer.client.routes.js
+    Line #: 13
+    Char #: 1
+    Reason: Expected ']' at column 5, not column 1.
+
+../../public/modules/modelviewer/modelviewer.client.module.js
+    Line #: 4
+    Char #: 1
+    Reason: 'ApplicationConfiguration' was used before it was defined.
+
+../../public/modules/modelviewer/views/create-modelviewer.client.view.html
+    Line #: 1
+    Char #: 1
+    Reason: Expected '(end)' and instead saw '<!'.
+
 ../../public/modules/users/tests/authentication.client.controller.test.js
     Line #: 9
     Char #: 13
@@ -57,12 +92,47 @@ LintRoller v2.3.5
     Char #: 13
     Reason: Unused '$stateParams'.
 
-=============== Running JSHINT [ Total errors: 1 ] ===============
+=============== Running JSHINT [ Total errors: 7 ] ===============
 
 ../../public/modules/core/services/menus.client.service.js
     Line #: 20
     Char #: 23
     Reason: Unexpected '~'.
 
-=============== Running ESPRIMA [ Total errors: 0 ] ===============
+../../public/modules/modelviewer/config/modelviewer.client.config.js
+    Line #: 1
+    Char #: 1
+    Reason: Use the function form of "use strict".
+
+../../public/modules/modelviewer/config/modelviewer.client.config.js
+    Line #: 4
+    Char #: 1
+    Reason: 'angular' is not defined.
+
+../../public/modules/modelviewer/config/modelviewer.client.routes.js
+    Line #: 1
+    Char #: 1
+    Reason: Use the function form of "use strict".
+
+../../public/modules/modelviewer/config/modelviewer.client.routes.js
+    Line #: 4
+    Char #: 1
+    Reason: 'angular' is not defined.
+
+../../public/modules/modelviewer/modelviewer.client.module.js
+    Line #: 1
+    Char #: 1
+    Reason: Use the function form of "use strict".
+
+../../public/modules/modelviewer/modelviewer.client.module.js
+    Line #: 4
+    Char #: 1
+    Reason: 'ApplicationConfiguration' is not defined.
+
+=============== Running ESPRIMA [ Total errors: 1 ] ===============
+
+../../public/modules/modelviewer/objects/treehouse_logo.js
+    Line #: 4
+    Char #: 1
+    Reason: Line 4: Unexpected token :
 
