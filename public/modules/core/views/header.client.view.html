@@ -29,6 +29,9 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right" data-ng-hide="authentication.user">
+            <li ui-route="/modelviewer/" ng-class="{active: $uiRoute}">
+                <a href="/#!/modelviewer">Maak een kat!</a>
+            </li>
             <li ui-route="/signup" ng-class="{active: $uiRoute}">
                 <a href="/#!/signup">Registreer</a>
             </li>

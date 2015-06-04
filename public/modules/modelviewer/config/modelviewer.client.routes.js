@@ -6,7 +6,7 @@ angular.module('modelviewer').config(['$stateProvider',
         // Modelviewer state routing
         $stateProvider.
             state('createModelviewer', {
-                url: '/modelviewer/',
+                url: '/modelviewer',
                 templateUrl: 'modules/modelviewer/views/create-modelviewer.client.view.html'
             });
     }
