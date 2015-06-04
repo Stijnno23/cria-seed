@@ -20,4 +20,5 @@ module.exports = function (app) {
 
     // Finish by binding the cat middleware
     app.param('catId', cats.catByID);
+
 };

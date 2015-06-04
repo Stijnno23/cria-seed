@@ -11,6 +11,6 @@ angular.module('cats').factory('Cats', ['$resource',
             update: {
                 method: 'PUT'
             }
-        });
+        })
     }
-    ]);
+]);

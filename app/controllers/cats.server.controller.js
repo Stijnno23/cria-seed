@@ -78,7 +78,6 @@ exports.list = function (req, res) {
             });
         }
         res.json(cats);
-        //console.log(res.json(cats));
     });
 };
 

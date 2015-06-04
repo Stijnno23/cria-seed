@@ -16,8 +16,6 @@ angular.module('users').controller('AuthenticationController', ['$scope', '$http
                 // If successful we assign the response to the global user model
                 $scope.authentication.user = response;
 
-                console.log($scope.credentials);
-
                 // And redirect to the index page
                 $location.path('/');
             }).error(function (response) {
