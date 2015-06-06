@@ -65,6 +65,22 @@ var CatSchema = new Schema({
         default: '',
         trim: true
     },
+    residence: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    playful: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    companions: {
+        type: String,
+        default: '',
+        trim: true
+    },
+
     about: {
         type: String,
         default: '',

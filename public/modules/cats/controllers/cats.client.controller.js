@@ -16,7 +16,10 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
                 size: this.size,
                 breedgroup: this.breedgroup,
                 kids: this.kids,
-                about: this.about
+                about: this.about,
+                residence: this.residence,
+                playful: this.playful,
+                companions: this.companions
             });
             cats.$save(function (response) {
                 $location.path('cats/' + response._id);
@@ -29,6 +32,9 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
                 $scope.breedgroup = '';
                 $scope.kids = '';
                 $scope.about = '';
+                $scope.residence = '';
+                $scope.playful = '';
+                $scope.companions = '';
             }, function (errorResponse) {
                 $scope.error = errorResponse.data.message;
             });

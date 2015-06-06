@@ -2,18 +2,20 @@
     <div class="page-header">
         <h1>Dogs</h1>
     </div>
+
     <div class="list-group">
-        <a data-ng-repeat="dogs in dogs| filter: authentication.user._id" data-ng-href="#!/dogs/{{dogs._id}}" class="list-group-item">
+        <a data-ng-repeat="dogs in dogs | filter: authentication.user._id" data-ng-href="#!/dogs/{{dogs._id}}" class="list-group-item">
             <small class="list-group-item-text">
-                <span data-ng-bind="dogs._id"></span>
-                <span data-ng-bind="dogs.user.displayName"></span>
+                <img align="right" src="{{dogs.picture}}"  height="45px">
             </small>
             <h4 class="list-group-item-heading" data-ng-bind="dogs.name"></h4>
+            <p class="list-group-item-text" data-ng-bind="dogs.about"></p>
 
-            <p class="list-group-item-text" data-ng-bind="dogs.registered"></p>
+
         </a>
     </div>
     <div class="alert alert-warning text-center" data-ng-if="dogs.$resolved && !dogs.length">
         No dogs yet, why don't you <a href="/#!/dogs/create">create one</a>?
     </div>
+
 </section>
