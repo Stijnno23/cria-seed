@@ -6,6 +6,14 @@
         <form name="dogForm" class="form-horizontal" data-ng-submit="create()" novalidate>
             <fieldset>
                 <div class="form-group">
+                    <label class="control-label" for="name">Name</label>
+
+                    <div class="controls">
+                        <textarea name="name" data-ng-model="name" id="name" class="form-control"
+                                  placeholder="Name"></textarea>
+                    </div>
+                </div>
+                <div class="form-group">
                     <label class="control-label" for="picture">Picture</label>
 
                     <div class="controls">
@@ -13,14 +21,14 @@
                                   placeholder="Picture"></textarea>
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label class="control-label" for="age">Age</label>
-
-                    <div class="controls">
-                        <textarea name="age" data-ng-model="age" id="age" class="form-control"
-                                  placeholder="Age"></textarea>
-                    </div>
+                    <select name="age" data-ng-model="age" id="age" class="form-control"
+                            placeholder="Age">
+                        <option value="Puppy">Puppy</option>
+                        <option value="Young">Young</option>
+                        <option value="Adult">Adult</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
@@ -33,20 +41,14 @@
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
-
-                    <div class="controls">
-                        <textarea name="name" data-ng-model="name" id="name" class="form-control"
-                                  placeholder="Name"></textarea>
-                    </div>
-                </div>
-
-                <div class="form-group">
                     <label class="control-label" for="gender">Gender</label>
 
                     <div class="controls">
-                        <textarea name="gender" data-ng-model="gender" id="gender" class="form-control"
-                                  placeholder="Gender"></textarea>
+                        <select name="gender" data-ng-model="gender" id="gender" class="form-control"
+                        placeholder="Gender">
+                            <option value="Female">Female</option>
+                            <option value="Male">Male</option>
+                        </select>
                     </div>
                 </div>
 
@@ -54,8 +56,12 @@
                     <label class="control-label" for="size">Size</label>
 
                     <div class="controls">
-                        <textarea name="size" data-ng-model="size" id="size" class="form-control"
-                                  placeholder="Size"></textarea>
+                        <select name="size" data-ng-model="size" id="size" class="form-control"
+                                placeholder="Size">
+                            <option value="Short">Short</option>
+                            <option value="Medium">Medium</option>
+                            <option value="Large">Large</option>
+                        </select>
                     </div>
                 </div>
 
@@ -63,8 +69,11 @@
                     <label class="control-label" for="breedgroup">Breedgroup</label>
 
                     <div class="controls">
-                        <textarea name="breedgroup" data-ng-model="breedgroup" id="breedgroup" class="form-control"
-                                  placeholder="Breedgroup"></textarea>
+                        <select name="breedgroup" data-ng-model="breedgroup" id="breedgroup" class="form-control"
+                                placeholder="Breedgroup">
+                            <option value="Short">Short</option>
+                            <option value="Long">Long</option>
+                        </select>
                     </div>
                 </div>
 
@@ -72,8 +81,11 @@
                     <label class="control-label" for="kids">Kids</label>
 
                     <div class="controls">
-                        <textarea name="kids" data-ng-model="kids" id="kids" class="form-control"
-                                  placeholder="Kids"></textarea>
+                        <select name="kids" data-ng-model="kids" id="kids" class="form-control"
+                                placeholder="Kids">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
                     </div>
                 </div>
 

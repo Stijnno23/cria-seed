@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Treehouse Logo in three.js</title>
+  <meta charset="utf-8">
+</head>
+<body style="margin: 0;">
+
+<button type="button" class="btn btn-default" id="keuze_een">Kort</button>
+<button type="button" class="btn btn-default" id="keuze_twee">Lang</button>
+<button type="button" class="btn btn-default" id="keuze_drie">Kitten</button>
+<button type="button" class="btn btn-default" id="keuze_vier">Young</button>
+<button type="button" class="btn btn-default" id="keuze_vijf">Adult</button>
+
+
+  <script src="../controller/three.min.js"></script>
+  <script src="../controller/OrbitControls.js"></script>
+
+  <script>
+
+    // Set up the scene, camera, and renderer as global variables.
+    var scene, camera, renderer;
+    var hair, age;
+    // Load in the mesh and add it to the scene.
+    var loader = new THREE.JSONLoader();
+
+    init();
+    animate();
+
+
+    // Sets up the scene.
+    function init() {
+
+      // Create the scene and set the scene size.
+      scene = new THREE.Scene();
+      var WIDTH = window.innerWidth,
+          HEIGHT = window.innerHeight;
+
+      // Create a renderer and add it to the DOM.
+      renderer = new THREE.WebGLRenderer({antialias:true});
+      renderer.setSize(WIDTH, HEIGHT);
+      document.body.appendChild(renderer.domElement);
+
+      // Create a camera, zoom it out from the model a bit, and add it to the scene.
+      camera = new THREE.PerspectiveCamera(45, WIDTH / HEIGHT, 0.1, 20000);
+      camera.position.set(0,6,0);
+      scene.add(camera);
+
+      // Create an event listener that resizes the renderer with the browser window.
+      window.addEventListener('resize', function() {
+        var WIDTH = window.innerWidth,
+            HEIGHT = window.innerHeight;
+        renderer.setSize(WIDTH, HEIGHT);
+        camera.aspect = WIDTH / HEIGHT;
+        camera.updateProjectionMatrix();
+      });
+
+      // Set the background color of the scene.
+      renderer.setClearColor(0x333F47, 1);
+
+      // Create a light, set its position, and add it to the scene.
+      var light = new THREE.PointLight(0xffffff);
+      light.position.set(-100,200,100);
+      scene.add(light);
+
+
+
+      loader.load( "../objects/treehouse_logo.js", function(geometry){
+        var material = new THREE.MeshLambertMaterial({color: 0x55B663});
+        mesh = new THREE.Mesh(geometry, material);
+        scene.add(mesh);
+      });
+
+      // Add OrbitControls so that we can pan around with the mouse.
+      controls = new THREE.OrbitControls(camera, renderer.domElement);
+
+    }
+
+
+    // Renders the scene and updates the render as needed.
+    function animate() {
+
+      // Read more about requestAnimationFrame at http://www.paulirish.com/2011/requestanimationframe-for-smart-animating/
+      requestAnimationFrame(animate);
+      
+      // Render the scene.
+      renderer.render(scene, camera);
+      controls.update();
+
+    }
+
+    document.getElementById("keuze_een").addEventListener("click", function(){
+        hair = "short";
+        determine();
+    })
+    document.getElementById("keuze_twee").addEventListener("click", function(){
+        hair = "long";
+        determine();
+    })
+    document.getElementById("keuze_drie").addEventListener("click", function(){
+        age = "kitten";
+        determine();
+    })
+    document.getElementById("keuze_vier").addEventListener("click", function(){
+        age = "young";
+        determine();
+    })
+    document.getElementById("keuze_vijf").addEventListener("click", function(){
+        age = "adult";
+        determine();
+    })
+
+      function determine(){
+
+              if ((hair === "short" || hair == undefined) && age === "kitten") {
+                  console.log("Short haired kitten");
+
+                  loader.load( "../objects/treehouse_logo.js", function(geometry){
+                      var material = new THREE.MeshLambertMaterial({color: 0xFF0000});
+                      mesh = new THREE.Mesh(geometry, material);
+                      scene.add(mesh);
+                  });
+                  /* 		loader.load("../objects/cat_kitten.js", function(geometry) {
+                   var texture = THREE.ImageUtils.loadTexture('../textures/kittenShort.???');
+                   var material = new THREE.MeshBasicMaterial({map: texture});
+                   var mesh = new THREE.Mesh(geometry, material);
+                   scene.add(mesh);
+                   }); */
+              }
+              else if (hair === "long" && age === "kitten") {
+                  console.log("Long haired kitten");
+
+                  loader.load( "../objects/treehouse_logo.js", function(geometry){
+                      var material = new THREE.MeshLambertMaterial({color: 0x55B663});
+                      mesh = new THREE.Mesh(geometry, material);
+                      scene.add(mesh);
+                  });
+                  /* 		loader.load("../objects/cat_kitten.js", function(geometry) {
+                   var texture = THREE.ImageUtils.loadTexture('../textures/kittenLong.???');
+                   var material = new THREE.MeshBasicMaterial({map: texture});
+                   var mesh = new THREE.Mesh(geometry, material);
+                   scene.add(mesh);
+                   }); */
+              }
+              else if ((hair === "short" || hair == undefined) && age === "young") {
+                  console.log("Short haired young cat");
+                  loader.load( "../objects/treehouse_logo.js", function(geometry){
+                      var material = new THREE.MeshLambertMaterial({color: 0x0000FF});
+                      mesh = new THREE.Mesh(geometry, material);
+                      scene.add(mesh);
+                  });
+                  /*    loader.load("../objects/cat_young.js", function(geometry) {
+                   var texture = THREE.ImageUtils.loadTexture('../textures/youngShort.???');
+                   var material = new THREE.MeshBasicMaterial({map: texture});
+                   var mesh = new THREE.Mesh(geometry, material);
+                   scene.add(mesh);
+                   }); */
+              }
+              else if (hair === "long" && age === "young") {
+                  console.log("Long haired young cat");
+                  /*  loader.load("../objects/cat_young.js", function(geometry) {
+                   var texture = THREE.ImageUtils.loadTexture('../textures/youngLong.???');
+                   var material = new THREE.MeshBasicMaterial({map: texture});
+                   var mesh = new THREE.Mesh(geometry, material);
+                   scene.add(mesh);
+                   }); */
+              }
+              else if ((hair === "short" || hair == undefined) && age === "adult") {
+                  console.log("Short haired adult cat");
+                  /*  loader.load("../objects/cat_adult.js", function(geometry) {
+                   var texture = THREE.ImageUtils.loadTexture('../textures/adultShort.???');
+                   var material = new THREE.MeshBasicMaterial({map: texture});
+                   var mesh = new THREE.Mesh(geometry, material);
+                   scene.add(mesh);
+                   }); */
+              }
+              else if (hair === "long" && age === "adult") {
+                  console.log("Long haired adult cat");
+                  /*   loader.load("../objects/cat_adult.js", function(geometry) {
+                   var texture = THREE.ImageUtils.loadTexture('../textures/adultLong.???');
+                   var material = new THREE.MeshBasicMaterial({map: texture});
+                   var mesh = new THREE.Mesh(geometry, material);
+                   scene.add(mesh);
+                   }); */
+              };
+
+//              if (.Modelviewer.location === "inside") {
+//                  console.log("I'm insiiiiiiiiiiiiiiiiide!");
+//                  /* 	var imagePrefix = "../images/livingroom-"
+//                   var directions = ["xpos", "xneg", "ypos", "yneg", "zpos", "zneg"];
+//                   var imageSuffix = ".png";
+//                   var roomGeometry = new THREE.CubeGeometry(5000,5000,5000);
+//
+//                   var materialArray = [];
+//                   for (var i = 0; i < 6; i++) {
+//                   materialArray.push(new THREE.MeshBasicMaterial({
+//                   map: THREE.ImageUtils.loadTexture( imagePrefix + directions[i] + imageSuffix),
+//                   side: THREE.BackSide
+//                   }));
+//                   }
+//                   var roomMaterial = new THREE.MeshFaceMaterial(materialArray);
+//                   var room = new THREE.Mesh(roomGeometry, roomMaterial);
+//                   scene.add(room); */
+//              }
+//              else if (.Modelviewer.location === "outside") {
+//                  console.log("Ooh blue sky!");
+//                  /* 	var imagePrefix = "../images/outside-"
+//                   var directions = ["xpos", "xneg", "ypos", "yneg", "zpos", "zneg"];
+//                   var imageSuffix = ".png";
+//                   var outsideGeometry = new THREE.CubeGeometry(5000,5000,5000);
+//
+//                   var materialArray = [];
+//                   for (var i = 0; i < 6; i++) {
+//                   materialArray.push(new THREE.MeshBasicMaterial({
+//                   map: THREE.ImageUtils.loadTexture( imagePrefix + directions[i] + imageSuffix),
+//                   side: THREE.BackSide
+//                   }));
+//                   }
+//                   var outsideMaterial = new THREE.MeshFaceMaterial(materialArray);
+//                   var outside = new THREE.Mesh(outsideGeometry, outsideMaterial);
+//                   scene.add(outside);	 */
+//              }
+//              else {
+//                  // do nothing
+//              }
+//
+//              if (.Modelviewer.companions === "yes") {
+//                  console.log("I can be with other cats");
+//                  /* 	loader.load("../objects/cat_young.js", function(geometry) {
+//                   var texture = THREE.ImageUtils.loadTexture('../textures/youngShort.??');
+//                   var material = new THREE.MeshBasicMaterial({map: texture});
+//                   var mesh = new THREE.Mesh(geometry, material);
+//                   scene.add(mesh);
+//                   } */
+//              }
+//              else {
+//                  console.log("I hate cats");
+//                  // do nothing
+//              }
+//
+//              if (.Modelviewer.playful === "true") {
+//                  //animate active
+//              }
+//              else {
+//                  //animate sleepy
+//              }
+//          }
+      }
+
+
+  </script>
+
+</body>
+</html>
