@@ -16,12 +16,6 @@ Make sure you have installed all these prerequisites on your development machine
 $ npm install -g bower
 ```
 
-* Grunt - You're going to use the [Grunt Task Runner](http://gruntjs.com/) to automate your development process, in order to install it make sure you've installed Node.js and npm, then install grunt globally using npm:
-
-```
-$ sudo npm install -g grunt-cli
-```
-
 ## Quick Install
 Once you've downloaded the boilerplate and installed all the prerequisites, you're just a few steps away from starting to develop you MEAN application.
 

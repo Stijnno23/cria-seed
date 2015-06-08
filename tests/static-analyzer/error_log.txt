@@ -1,14 +1,14 @@
 LintRoller v2.3.5
 
-    Output for Mon Jun 08 2015 13:08:18 GMT+0200 (West-Europa (zomertijd))
+    Output for Mon Jun 08 2015 13:29:52 GMT+0200 (West-Europa (zomertijd))
 
     Total files found   : 55
     All errors reported : 2
 
 
-    3122 lines checked via JSLINT
-    3122 lines checked via JSHINT
-    3122 lines checked via ESPRIMA
+    3114 lines checked via JSLINT
+    3114 lines checked via JSHINT
+    3114 lines checked via ESPRIMA
 
 =============== Running JSLINT [ Total errors: 1 ] ===============
 
