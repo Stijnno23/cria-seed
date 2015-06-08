@@ -17,7 +17,7 @@ angular.module('core').service('Menus', [
             var userRoleIndex, roleIndex;
 
             if (user) {
-                if (!!~this.roles.indexOf('*')) {
+                if (this.roles.indexOf('*') > -1) {
                     return true;
                 }
                 for (userRoleIndex in user.roles) {

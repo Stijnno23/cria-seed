@@ -1,63 +1,23 @@
 LintRoller v2.3.5
 
-    Output for Mon Jun 08 2015 11:36:03 GMT+0200 (West-Europa (zomertijd))
+    Output for Mon Jun 08 2015 13:08:18 GMT+0200 (West-Europa (zomertijd))
 
-    Total files found   : 53
-    All errors reported : 10
+    Total files found   : 55
+    All errors reported : 2
 
 
-    3040 lines checked via JSLINT
-    3040 lines checked via JSHINT
-    3040 lines checked via ESPRIMA
+    3122 lines checked via JSLINT
+    3122 lines checked via JSHINT
+    3122 lines checked via ESPRIMA
 
-=============== Running JSLINT [ Total errors: 8 ] ===============
-
-../../public/modules/core/services/menus.client.service.js
-    Line #: 20
-    Char #: 23
-    Reason: Unexpected '~'.
-
-../../public/modules/core/services/menus.client.service.js
-    Line #: 20
-    Char #: 21
-    Reason: Unexpected '!!'.
-
-../../public/modules/core/tests/header.client.controller.test.js
-    Line #: 9
-    Char #: 13
-    Reason: Unused 'HeaderController'.
-
-../../public/modules/core/tests/home.client.controller.test.js
-    Line #: 9
-    Char #: 13
-    Reason: Unused 'HomeController'.
-
-../../public/modules/dogs/tests/dogs.client.controller.test.js
-    Line #: 9
-    Char #: 13
-    Reason: Unused 'ArticlesController'.
+=============== Running JSLINT [ Total errors: 1 ] ===============
 
 ../../public/modules/modelviewer/objects/treehouse_logo.js
     Line #: 19
     Char #: 20
     Reason: Use spaces, not tabs.
 
-../../public/modules/users/tests/authentication.client.controller.test.js
-    Line #: 9
-    Char #: 13
-    Reason: Unused 'AuthenticationController'.
-
-../../public/modules/users/tests/authentication.client.controller.test.js
-    Line #: 12
-    Char #: 13
-    Reason: Unused '$stateParams'.
-
-=============== Running JSHINT [ Total errors: 1 ] ===============
-
-../../public/modules/core/services/menus.client.service.js
-    Line #: 20
-    Char #: 23
-    Reason: Unexpected '~'.
+=============== Running JSHINT [ Total errors: 0 ] ===============
 
 =============== Running ESPRIMA [ Total errors: 1 ] ===============
 

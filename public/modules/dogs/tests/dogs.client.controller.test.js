@@ -6,8 +6,7 @@
     // Articles Controller Spec
     describe('ArticlesController', function () {
         // Initialize global variables
-        var ArticlesController,
-            scope,
+        var scope,
             $httpBackend,
             $stateParams,
             $location;
@@ -46,10 +45,6 @@
             $httpBackend = _$httpBackend_;
             $location = _$location_;
 
-            // Initialize the Articles controller.
-            ArticlesController = $controller('ArticlesController', {
-                $scope: scope
-            });
         }));
 
         it('$scope.find() should create an array with at least one article object fetched from XHR', inject(function (Articles) {
