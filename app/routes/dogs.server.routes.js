@@ -1,6 +1,8 @@
 /*jslint node: true */
 'use strict';
 
+//Defines the routes for the dogs
+
 /**
  * Module dependencies.
  */

@@ -1,6 +1,8 @@
 /*jslint node: true */
 'use strict';
 
+//Defines the schema for the dog
+
 /**
  * Module dependencies.
  */
@@ -61,6 +63,26 @@ var DogSchema = new Schema({
         trim: true
     },
     kids: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    residence: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    playful: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    companions: {
+        type: String,
+        default: '',
+        trim: true
+    },
+    website: {
         type: String,
         default: '',
         trim: true

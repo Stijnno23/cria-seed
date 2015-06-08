@@ -1,6 +1,8 @@
 /*jslint node: true */
 'use strict';
 
+//Defines the schema for the cat
+
 /**
  * Module dependencies.
  */

@@ -1,6 +1,8 @@
 /*jslint node: true */
 'use strict';
 
+//Defines all the dog functions for querying to the database
+
 /**
  * Module dependencies.
  */

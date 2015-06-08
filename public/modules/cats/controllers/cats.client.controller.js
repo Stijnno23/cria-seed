@@ -62,7 +62,6 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
 
         $scope.update = function () {
             var cat = $scope.cat;
-
             cat.$update(function () {
                 $location.path('cats/' + cat._id);
             }, function (errorResponse) {

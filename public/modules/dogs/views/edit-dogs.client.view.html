@@ -1,106 +1,122 @@
 <section data-ng-controller="DogsController" data-ng-init="findOne()">
     <div class="page-header">
-        <h1>Edit Dog</h1>
+        <h1>Wijzig de hond</h1>
     </div>
     <div class="col-md-12">
         <form name="dogForm" class="form-horizontal" data-ng-submit="update(dogForm.$valid)" novalidate>
             <fieldset>
                 <div class="form-group">
-                    <label class="control-label" for="picture">Picture</label>
-
-                    <div class="controls">
-                        <input name="picture" type="text" data-ng-model="dog.picture" id="picture" class="form-control"
-                               placeholder="picture" required>
-                    </div>
+                    <label class="control-label" for="age">Leeftijd</label>
+                    <select name="age" data-ng-model="dog.age" id="age" class="form-control"
+                            placeholder="Leeftijd">
+                        <option value="Puppy">Puppy</option>
+                        <option value="Jong">Jong</option>
+                        <option value="Volwassen">Volwassen</option>
+                    </select>
                 </div>
-                <div class="form-group">
-                    <label class="control-label" for="age">Age</label>
 
-                    <div class="controls">
-                        <input name="age" type="text" data-ng-model="dog.age" id="age" class="form-control"
-                               placeholder="age" required>
-                    </div>
-                </div>
                 <div class="form-group">
-                    <label class="control-label" for="eyeColor">Eyecolor</label>
+                    <label class="control-label" for="eyeColor">Oogkleur</label>
 
                     <div class="controls">
                         <input name="eyeColor" type="eyeColor" data-ng-model="dog.eyecolor" id="eyeColor"
-                               class="form-control" placeholder="eyeColor" required>
+                               class="form-control" placeholder="Oogkleur" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
+                    <label class="control-label" for="name">Naam</label>
 
                     <div class="controls">
                         <input name="name" type="name" data-ng-model="dog.name" id="name" class="form-control"
-                               placeholder="name" required>
+                               placeholder="Naam" required>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="size">Size</label>
+                    <label class="control-label" for="size">Grootte</label>
 
                     <div class="controls">
-                        <input name="size" type="size" data-ng-model="dog.size" id="size" class="form-control"
-                               placeholder="size" required>
+                        <select name="size" data-ng-model="dog.size" id="size" class="form-control"
+                                placeholder="Grootte">
+                            <option value="Klein">Klein</option>
+                            <option value="Gemiddeld">Gemiddeld</option>
+                            <option value="Groot">Groot</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="gender">Gender</label>
+                    <label class="control-label" for="gender">Geslacht</label>
 
                     <div class="controls">
-                        <input name="gender" type="gender" data-ng-model="dog.gender" id="gender" class="form-control"
-                               placeholder="gender" required>
+                        <select name="gender" data-ng-model="dog.gender" id="gender" class="form-control"
+                                placeholder="Geslacht">
+                            <option value="Vrouwelijk">Vrouwelijk</option>
+                            <option value="Mannelijk">Mannelijk</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="breedgroup">Breedgroup</label>
+                    <label class="control-label" for="breedgroup">Haar lengte</label>
 
                     <div class="controls">
-                        <input name="breedgroup" type="breedgroup" data-ng-model="dog.breedgroup" id="breedgroup"
-                               class="form-control" placeholder="breedgroup" required>
+                        <select name="breedgroup" data-ng-model="dog.breedgroup" id="breedgroup" class="form-control"
+                                placeholder="Haar lengte">
+                            <option value="Kort harig">Kort harig</option>
+                            <option value="Lang harig">Lang harig</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="kids">Kids</label>
+                    <label class="control-label" for="kids">Kan met kinderen omgaan?</label>
 
                     <div class="controls">
-                        <input name="kids" type="kids" data-ng-model="dog.kids" id="kids" class="form-control"
-                               placeholder="kids" required>
+                        <select name="kids" data-ng-model="dog.kids" id="kids" class="form-control"
+                                placeholder="Kinderen">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="residence">Residence</label>
+                    <label class="control-label" for="residence">Omgeving</label>
 
                     <div class="controls">
-                        <input name="residence" type="residence" data-ng-model="dog.residence" id="residence" class="form-control"
-                               placeholder="residence" required>
+                        <select name="residence" data-ng-model="dog.residence" id="residence" class="form-control"
+                                placeholder="Omgeving">
+                            <option value="Binnen">Binnen</option>
+                            <option value="Buiten">Buiten</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="playful">Playful</label>
+                    <label class="control-label" for="playful">Speels</label>
 
                     <div class="controls">
-                        <input name="playful" type="playful" data-ng-model="dog.playful" id="playful" class="form-control"
-                               placeholder="Playful" required>
+                        <select name="playful" data-ng-model="dog.playful" id="playful" class="form-control"
+                                placeholder="Speels">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="companions">Companions</label>
+                    <label class="control-label" for="companions">Kan met andere dieren omgaan</label>
 
                     <div class="controls">
-                        <input name="companions" type="companions" data-ng-model="dog.companions" id="companions" class="form-control"
-                               placeholder="Companions" required>
+                        <select name="companions" data-ng-model="dog.companions" id="companions" class="form-control"
+                                placeholder="Andere dieren?">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
+                        </select>
                     </div>
                 </div>
-
                 <div class="form-group">
                     <label class="control-label" for="website">Website</label>
 
                     <div class="controls">
-                        <input name="about" type="website" data-ng-model="dog.website" id="website" class="form-control"
-                               placeholder="Website" required>
+                        <input name="website" type="website" data-ng-model="dog.website" id="website"
+                               class="form-control"
+                               placeholder="website" required>
                     </div>
                 </div>
                 <div class="form-group">
