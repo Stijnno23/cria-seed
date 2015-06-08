@@ -6,7 +6,7 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
     function ($scope, $stateParams, $location, Authentication, Cats) {
         $scope.authentication = Authentication;
 
-        $scope.create = function() {
+        $scope.create = function () {
             var cats = new Cats({
                 picture: document.getElementById("newImage").src,
                 age: this.age,
