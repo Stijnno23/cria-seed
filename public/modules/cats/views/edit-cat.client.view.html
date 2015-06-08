@@ -17,8 +17,12 @@
                     <label class="control-label" for="age">Leeftijd</label>
 
                     <div class="controls">
-                        <input name="age" type="text" data-ng-model="cat.age" id="age" class="form-control"
-                               placeholder="leeftijd" required>
+                        <select name="age" data-ng-model="cat.age" id="age" class="form-control"
+                                placeholder="Leeftijd">
+                            <option value="Kitten">Kitten</option>
+                            <option value="Jong">Jong</option>
+                            <option value="Volwassen">Volwassen</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
@@ -41,40 +45,56 @@
                     <label class="control-label" for="size">Grootte</label>
 
                     <div class="controls">
-                        <input name="size" type="size" data-ng-model="cat.size" id="size" class="form-control"
-                               placeholder="grootte" required>
+                        <select name="size" data-ng-model="cat.size" id="size" class="form-control"
+                                placeholder="Grootte">
+                            <option value="Kort">Kort</option>
+                            <option value="Gemiddeld">Gemiddeld</option>
+                            <option value="Groot">Groot</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="gender">Geslacht</label>
 
                     <div class="controls">
-                        <input name="gender" type="gender" data-ng-model="cat.gender" id="gender" class="form-control"
-                               placeholder="geslacht" required>
+                        <select name="gender" data-ng-model="cat.gender" id="gender" class="form-control"
+                                placeholder="Geslacht">
+                            <option value="Vrouwelijk">Vrouwelijk</option>
+                            <option value="Mannelijk">Mannelijk</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="breedgroup">Haarlengte</label>
 
                     <div class="controls">
-                        <input name="breedgroup" type="breedgroup" data-ng-model="cat.breedgroup" id="breedgroup"
-                               class="form-control" placeholder="haarlengte" required>
+                        <select name="breedgroup" data-ng-model="cat.breedgroup" id="breedgroup" class="form-control"
+                                placeholder="Haarlengte">
+                            <option value="Kortharig">Kortharig</option>
+                            <option value="Langharig">Langharig</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="kids">Kan met kinderen omgaan?</label>
 
                     <div class="controls">
-                        <input name="kids" type="kids" data-ng-model="cat.kids" id="kids" class="form-control"
-                               placeholder="kinderen" required>
+                        <select name="kids" data-ng-model="cat.kids" id="kids" class="form-control"
+                                placeholder="Kinderen?">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="residence">Omgeving?</label>
 
                     <div class="controls">
-                        <input name="residence" type="residence" data-ng-model="cat.residence" id="residence" class="form-control"
-                               placeholder="omgeving" required>
+                        <select name="residence" data-ng-model="cat.residence" id="residence" class="form-control"
+                                placeholder="Omgeving">
+                            <option value="Binnenkat">Binnenkat</option>
+                            <option value="Buitenkat">Buitenkat</option>
+                        </select>
                     </div>
                 </div>
 
@@ -82,16 +102,22 @@
                     <label class="control-label" for="playful">Speels?</label>
 
                     <div class="controls">
-                        <input name="playful" type="playful" data-ng-model="cat.playful" id="playful" class="form-control"
-                               placeholder="speels" required>
+                        <select name="playful" data-ng-model="cat.playful" id="playful" class="form-control"
+                                placeholder="Speels?">
+                            <option value="Yes">Ja</option>
+                            <option value="No">Nee</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
                     <label class="control-label" for="companions">Kan met andere dieren omgaan?</label>
 
                     <div class="controls">
-                        <input name="companions" type="companions" data-ng-model="cat.companions" id="companions" class="form-control"
-                               placeholder="andere dieren" required>
+                        <select name="companions" data-ng-model="cat.companions" id="companions" class="form-control"
+                                placeholder="Andere dieren?">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
+                        </select>
                     </div>
                 </div>
                 <div class="form-group">
