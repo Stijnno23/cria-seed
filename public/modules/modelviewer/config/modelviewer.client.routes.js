@@ -11,9 +11,9 @@ angular.module('modelviewer').config(['$stateProvider',
                 url: '/modelviewer',
                 templateUrl: 'modules/modelviewer/views/create-modelviewer.client.view.html'
             }).
-            state('3dview', {
-                url: '/3dviewer',
-                templateUrl: 'modules/modelviewer/views//index.html'
-            });
+            state('resultModelviewer' ,{
+            url: '/modelviewer/results',
+                templateUrl: 'modules/cats/views/results-cats.client.view.html'
+        });
     }
     ]);

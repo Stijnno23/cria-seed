@@ -80,7 +80,11 @@ var CatSchema = new Schema({
         default: '',
         trim: true
     },
-
+    website: {
+        type: String,
+        default: '',
+        trim: true
+    },
     about: {
         type: String,
         default: '',
