@@ -1,23 +1,118 @@
 LintRoller v2.3.5
 
-    Output for Mon Jun 08 2015 13:29:52 GMT+0200 (West-Europa (zomertijd))
+    Output for Mon Jun 08 2015 17:40:26 GMT+0200 (West-Europa (zomertijd))
 
-    Total files found   : 55
-    All errors reported : 2
+    Total files found   : 57
+    All errors reported : 21
 
 
-    3114 lines checked via JSLINT
-    3114 lines checked via JSHINT
-    3114 lines checked via ESPRIMA
+    3179 lines checked via JSLINT
+    3134 lines checked via JSHINT
+    3134 lines checked via ESPRIMA
 
-=============== Running JSLINT [ Total errors: 1 ] ===============
+=============== Running JSLINT [ Total errors: 18 ] ===============
+
+../../public/modules/cats/controllers/cats.client.controller.js
+    Line #: 9
+    Char #: 33
+    Reason: Expected exactly one space between 'function' and '('.
+
+../../public/modules/core/services/menus.client.service.js
+    Line #: 93
+    Char #: 44
+    Reason: Unexpected 'typeof'. Use '===' to compare directly with undefined.
+
+../../public/modules/core/services/menus.client.service.js
+    Line #: 119
+    Char #: 56
+    Reason: Unexpected 'typeof'. Use '===' to compare directly with undefined.
+
+../../public/modules/image/app.js
+    Line #: 10
+    Char #: 1
+    Reason: Expected '.' at column 9, not column 1.
+
+../../public/modules/image/app.js
+    Line #: 11
+    Char #: 3
+    Reason: Expected 'flowFactoryProvider' at column 13, not column 3.
+
+../../public/modules/image/app.js
+    Line #: 12
+    Char #: 5
+    Reason: Expected 'target' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 13
+    Char #: 5
+    Reason: Expected 'permanentErrors' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 14
+    Char #: 5
+    Reason: Expected 'maxChunkRetries' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 15
+    Char #: 5
+    Reason: Expected 'chunkRetryInterval' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 16
+    Char #: 5
+    Reason: Expected 'simultaneousUploads' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 17
+    Char #: 5
+    Reason: Expected 'singleFile' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 18
+    Char #: 3
+    Reason: Expected '}' at column 13, not column 3.
+
+../../public/modules/image/app.js
+    Line #: 19
+    Char #: 3
+    Reason: Expected 'flowFactoryProvider' at column 13, not column 3.
+
+../../public/modules/image/app.js
+    Line #: 20
+    Char #: 5
+    Reason: Expected 'console' at column 17, not column 5.
+
+../../public/modules/image/app.js
+    Line #: 21
+    Char #: 3
+    Reason: Expected '}' at column 13, not column 3.
+
+../../public/modules/image/app.js
+    Line #: 24
+    Char #: 1
+    Reason: Expected '}' at column 9, not column 1.
+
+../../public/modules/image/index.html
+    Line #: 1
+    Char #: 1
+    Reason: Expected '(end)' and instead saw '<!'.
 
 ../../public/modules/modelviewer/objects/treehouse_logo.js
     Line #: 19
     Char #: 20
     Reason: Use spaces, not tabs.
 
-=============== Running JSHINT [ Total errors: 0 ] ===============
+=============== Running JSHINT [ Total errors: 2 ] ===============
+
+../../public/modules/image/app.js
+    Line #: 2
+    Char #: 1
+    Reason: Use the function form of "use strict".
+
+../../public/modules/image/app.js
+    Line #: 20
+    Char #: 5
+    Reason: 'console' is not defined.
 
 =============== Running ESPRIMA [ Total errors: 1 ] ===============
 
