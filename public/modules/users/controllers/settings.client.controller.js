@@ -2,6 +2,7 @@
 /*global $, angular */
 'use strict';
 
+//Defines the settings controller
 angular.module('users').controller('SettingsController', ['$scope', '$http', '$location', 'Users', 'Authentication',
     function ($scope, $http, $location, Users, Authentication) {
         $scope.user = Authentication.user;

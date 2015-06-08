@@ -2,6 +2,8 @@
 /*global $, angular */
 'use strict';
 
+
+//Defines the password controller
 angular.module('users').controller('PasswordController', ['$scope', '$stateParams', '$http', '$location', 'Authentication',
     function ($scope, $stateParams, $http, $location, Authentication) {
         $scope.authentication = Authentication;

@@ -2,6 +2,7 @@
 /*global $, angular */
 'use strict';
 
+//Defines the modelviewer controller
 angular.module('modelviewer').controller('ModelviewerController', ['$scope', '$stateParams', '$location', 'Modelviewer',
     function ($scope, $stateParams, $location, Modelviewer) {
 

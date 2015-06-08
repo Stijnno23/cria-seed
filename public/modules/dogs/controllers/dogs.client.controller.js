@@ -2,6 +2,7 @@
 /*global $, angular */
 'use strict';
 
+//Defines the dog controller
 angular.module('dogs').controller('DogsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Dogs',
     function ($scope, $stateParams, $location, Authentication, Dogs) {
         $scope.authentication = Authentication;

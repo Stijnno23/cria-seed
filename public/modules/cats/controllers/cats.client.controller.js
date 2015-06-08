@@ -2,6 +2,7 @@
 /*global $, angular */
 'use strict';
 
+//Defines the cats controller
 angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '$location', 'Authentication', 'Cats',
     function ($scope, $stateParams, $location, Authentication, Cats) {
         $scope.authentication = Authentication;
