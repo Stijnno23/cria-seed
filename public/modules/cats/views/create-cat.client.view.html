@@ -1,16 +1,16 @@
 <section data-ng-controller="CatsController">
     <div class="page-header">
-        <h1>New Cat</h1>
+        <h1>Nieuwe Kat</h1>
     </div>
     <div class="col-md-12">
         <form name="catForm" class="form-horizontal" data-ng-submit="create()" novalidate>
             <fieldset>
                 <div class="form-group">
-                    <label class="control-label" for="name">Name</label>
+                    <label class="control-label" for="name">Naam</label>
 
                     <div class="controls">
                         <textarea name="name" data-ng-model="name" id="name" class="form-control"
-                                  placeholder="Name"></textarea>
+                                  placeholder="Naam"></textarea>
                     </div>
                 </div>
 
@@ -27,120 +27,120 @@
                         <img id="newImage" flow-img="$flow.files[0]">
                     </div>
                     <div>
-                        <span class="btn btn-primary" ng-show="!$flow.files.length" flow-btn>Select image<input
+                        <span class="btn btn-primary" ng-show="!$flow.files.length" flow-btn>Kies een afbeelding<input
                                 type="file" style="visibility: hidden; position: absolute;"></span>
-                        <span class="btn btn-info ng-hide" ng-show="$flow.files.length" flow-btn>Change<input
+                        <span class="btn btn-info ng-hide" ng-show="$flow.files.length" flow-btn>Wijzig<input
                                 type="file" style="visibility: hidden; position: absolute;"></span>
-                        <span class="btn btn-danger ng-hide" ng-show="$flow.files.length" ng-click="$flow.cancel()">Remove</span>
+                        <span class="btn btn-danger ng-hide" ng-show="$flow.files.length" ng-click="$flow.cancel()">Verwijder</span>
                     </div>
                     <p>
-                        Only PNG,GIF,JPG,JEPG files allowed.
+                        Alleen PNG,GIF,JPG,JPEG bestanden toegestaan.
                     </p>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="age">Age</label>
+                    <label class="control-label" for="age">Leeftijd</label>
                     <select name="age" data-ng-model="age" id="age" class="form-control"
-                            placeholder="Age">
+                            placeholder="Leeftijd">
                         <option value="Kitten">Kitten</option>
-                        <option value="Young">Young</option>
-                        <option value="Adult">Adult</option>
+                        <option value="Jong">Jong</option>
+                        <option value="Volwassen">Volwassen</option>
                     </select>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="eyecolor">Eyecolor</label>
+                    <label class="control-label" for="eyecolor">Oogkleur</label>
 
                     <div class="controls">
                         <textarea name="eyecolor" data-ng-model="eyecolor" id="eyecolor" class="form-control"
-                                  placeholder="Eyecolor"></textarea>
+                                  placeholder="Oogkleur"></textarea>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="gender">Gender</label>
+                    <label class="control-label" for="gender">Geslacht</label>
 
                     <div class="controls">
                         <select name="gender" data-ng-model="gender" id="gender" class="form-control"
-                                placeholder="Gender">
-                            <option value="Female">Female</option>
-                            <option value="Male">Male</option>
+                                placeholder="Geslacht">
+                            <option value="Vrouwelijk">Vrouwelijk</option>
+                            <option value="Mannelijk">Mannelijk</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="size">Size</label>
+                    <label class="control-label" for="size">Grootte</label>
 
                     <div class="controls">
                         <select name="size" data-ng-model="size" id="size" class="form-control"
-                                placeholder="Size">
-                            <option value="Short">Short</option>
-                            <option value="Medium">Medium</option>
-                            <option value="Large">Large</option>
+                                placeholder="Grootte">
+                            <option value="Kort">Kort</option>
+                            <option value="Gemiddeld">Gemiddeld</option>
+                            <option value="Groot">Groot</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="breedgroup">Hair length</label>
+                    <label class="control-label" for="breedgroup">Haarlengte</label>
 
                     <div class="controls">
                         <select name="breedgroup" data-ng-model="breedgroup" id="breedgroup" class="form-control"
-                                placeholder="Hair length">
-                            <option value="Short">Short</option>
-                            <option value="Long">Long</option>
+                                placeholder="Haarlengte">
+                            <option value="Kortharig">Kortharig</option>
+                            <option value="Langharig">Langharig</option>
                         </select>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <label class="control-label" for="kids">Kids</label>
+                    <label class="control-label" for="kids">Kan met kinderen omgaan?</label>
 
                     <div class="controls">
                         <select name="kids" data-ng-model="kids" id="kids" class="form-control"
-                                placeholder="Kids">
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
+                                placeholder="Kinderen?">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="companions">Companions</label>
+                    <label class="control-label" for="companions">Kan met andere dieren omgaan?</label>
 
                     <div class="controls">
                         <select name="companions" data-ng-model="companions" id="companions" class="form-control"
-                                placeholder="Companions">
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
+                                placeholder="Andere dieren?">
+                            <option value="Ja">Ja</option>
+                            <option value="Nee">Nee</option>
                         </select>
                     </div>
                 </div>
 
 
                 <div class="form-group">
-                    <label class="control-label" for="playful">Playful</label>
+                    <label class="control-label" for="playful">Speels</label>
 
                     <div class="controls">
                         <select name="playful" data-ng-model="playful" id="playful" class="form-control"
-                                placeholder="Playful">
-                            <option value="Yes">Yes</option>
-                            <option value="No">No</option>
+                                placeholder="Speels?">
+                            <option value="Yes">Ja</option>
+                            <option value="No">Nee</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="residence">Residence</label>
+                    <label class="control-label" for="residence">Omgeving?</label>
 
                     <div class="controls">
                         <select name="residence" data-ng-model="residence" id="residence" class="form-control"
-                                placeholder="Residence">
-                            <option value="Inside">Inside</option>
-                            <option value="Outside">Outside</option>
+                                placeholder="Omgeving">
+                            <option value="Binnenkat">Binnenkat</option>
+                            <option value="Buitenkat">Buitenkat</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="website">Website asylum</label>
+                    <label class="control-label" for="website">Website van het asiel</label>
 
                     <div class="controls">
                         <textarea name="website" data-ng-model="website" id="website" class="form-control"
@@ -148,11 +148,11 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label class="control-label" for="about">About</label>
+                    <label class="control-label" for="about">Over</label>
 
                     <div class="controls">
                         <textarea name="about" data-ng-model="about" id="about" class="form-control"
-                                  placeholder="About"></textarea>
+                                  placeholder="Beschrijving"></textarea>
                     </div>
                 </div>
 
