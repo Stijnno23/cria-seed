@@ -6,10 +6,8 @@
     // Authentication controller Spec
     describe('AuthenticationController', function () {
         // Initialize global variables
-        var AuthenticationController,
-            scope,
+        var scope,
             $httpBackend,
-            $stateParams,
             $location;
 
         beforeEach(function () {
@@ -37,14 +35,9 @@
             scope = $rootScope.$new();
 
             // Point global variables to injected services
-            $stateParams = _$stateParams_;
             $httpBackend = _$httpBackend_;
             $location = _$location_;
 
-            // Initialize the Authentication controller
-            AuthenticationController = $controller('AuthenticationController', {
-                $scope: scope
-            });
         }));
 
 

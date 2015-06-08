@@ -6,8 +6,7 @@
     // Articles Controller Spec
     describe('ArticlesController', function () {
         // Initialize global variables
-        var ArticlesController,
-            scope,
+        var scope,
             $httpBackend,
             $stateParams,
             $location;
@@ -46,21 +45,18 @@
             $httpBackend = _$httpBackend_;
             $location = _$location_;
 
-            // Initialize the Articles controller.
-            ArticlesController = $controller('ArticlesController', {
-                $scope: scope
-            });
         }));
 
         it('$scope.find() should create an array with at least one article object fetched from XHR', inject(function (Articles) {
+            var sampleArticle, sampleArticles;
             // Create sample article using the Articles service
-            var sampleArticle = new Articles({
+            sampleArticle = new Articles({
                 title: 'An Article about MEAN',
                 content: 'MEAN rocks!'
             });
 
             // Create a sample articles array that includes the new article
-            var sampleArticles = [sampleArticle];
+            sampleArticles = [sampleArticle];
 
             // Set GET response
             $httpBackend.expectGET('articles').respond(sampleArticles);
@@ -95,14 +91,15 @@
         }));
 
         it('$scope.create() with valid form data should send a POST request with the form input values and then locate to new object URL', inject(function (Articles) {
+            var sampleArticlePostData, sampleArticleResponse;
             // Create a sample article object
-            var sampleArticlePostData = new Articles({
+            sampleArticlePostData = new Articles({
                 title: 'An Article about MEAN',
                 content: 'MEAN rocks!'
             });
 
             // Create a sample article response
-            var sampleArticleResponse = new Articles({
+            sampleArticleResponse = new Articles({
                 _id: '525cf20451979dea2c000001',
                 title: 'An Article about MEAN',
                 content: 'MEAN rocks!'
