@@ -28,3 +28,11 @@ Once the npm install is done, you can run the application with (there is an term
 $ nodemon server.js
 ```
 
+Also required is that there is a MongoDB server running. Set the path to your server in the file:
+``
+Cria-seed/config/env/development
+``
+Set the path like this, db: 'mongodb://server3.tezzt.nl:27017/ProjectAnimania'.
+Replace what is within the string.
+
+## Test

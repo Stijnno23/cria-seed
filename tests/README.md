@@ -4,8 +4,6 @@ Go to directory `static-analyzer`
 
 Run `./run_lint.sh`
 
-![static-analyze.png](https://raw.githubusercontent.com/theotheu/books/assets/docs/assets/static-analyzer.png)
-no
 
 ## Run the app
 Run `nodemon` in the server directory.

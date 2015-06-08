@@ -8,7 +8,7 @@ angular.module('dogs').controller('DogsController', ['$scope', '$stateParams', '
 
         $scope.create = function () {
             var dogs = new Dogs({
-                picture: this.picture,
+                picture: document.getElementById("newImage").src,
                 age: this.age,
                 eyecolor: this.eyecolor,
                 name: this.name,

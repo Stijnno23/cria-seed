@@ -7,7 +7,7 @@ var ApplicationConfiguration = (function () {
     // Init module configuration options
     var registerModule,
         applicationModuleName = 'animania',
-        applicationModuleVendorDependencies = ['ngResource', 'ngCookies', 'ngAnimate', 'ngSanitize', 'ui.router', 'ui.bootstrap', 'ui.utils'];
+        applicationModuleVendorDependencies = ['ngResource', 'ngCookies', 'ngAnimate', 'ngSanitize', 'ui.router', 'ui.bootstrap', 'ui.utils', 'flow'];
 
     // Add a new vertical module
     registerModule = function (moduleName, dependencies) {
