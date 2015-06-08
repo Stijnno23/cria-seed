@@ -13,4 +13,4 @@ angular.module('modelviewer').factory('Modelviewer', ['$resource',
             }
         });
     }
-]);
+    ]);

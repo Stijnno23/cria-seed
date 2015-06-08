@@ -1,3 +1,5 @@
+/*jslint node: true */
+/*global $, angular */
 'use strict';
 
 // Setting up modelviewer
@@ -9,9 +11,9 @@ angular.module('modelviewer').config(['$stateProvider',
                 url: '/modelviewer',
                 templateUrl: 'modules/modelviewer/views/create-modelviewer.client.view.html'
             }).
-            state('3dview' ,{
-            url: '/3dviewer',
+            state('3dview', {
+                url: '/3dviewer',
                 templateUrl: 'modules/modelviewer/views//index.html'
-        });
+            });
     }
-]);
+    ]);

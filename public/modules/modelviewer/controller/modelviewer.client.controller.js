@@ -15,5 +15,5 @@ angular.module('modelviewer').controller('ModelviewerController', ['$scope', '$s
             });
         };
     }
-]);
+    ]);
 
