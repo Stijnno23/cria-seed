@@ -17,3 +17,13 @@ angular.module('modelviewer').controller('ModelviewerController', ['$scope', '$s
     }
 ]);
 
+document.addEventListener("load", function () {
+    document.getElementById("button").addEventListener("click", function () {
+
+        console.log("hi");
+
+    });
+});
+
+
+

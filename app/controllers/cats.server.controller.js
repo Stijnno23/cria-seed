@@ -82,6 +82,20 @@ exports.list = function (req, res) {
 };
 
 /**
+ * Results of cats
+ */
+exports.results = function (req, res) {
+    Cat.find().exec(function (err, cats) {
+        if (err) {
+            return res.status(400).send({
+                message: errorHandler.getErrorMessage(err)
+            });
+        }
+        res.json(cats);
+    });
+};
+
+/**
  * Cat middleware
  */
 exports.catByID = function (req, res, next, id) {

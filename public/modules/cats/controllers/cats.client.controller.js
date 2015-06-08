@@ -19,7 +19,8 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
                 about: this.about,
                 residence: this.residence,
                 playful: this.playful,
-                companions: this.companions
+                companions: this.companions,
+                website : this.website
             });
             cats.$save(function (response) {
                 $location.path('cats/' + response._id);
@@ -35,6 +36,7 @@ angular.module('cats').controller('CatsController', ['$scope', '$stateParams', '
                 $scope.residence = '';
                 $scope.playful = '';
                 $scope.companions = '';
+                $scope.website = '';
             }, function (errorResponse) {
                 $scope.error = errorResponse.data.message;
             });
