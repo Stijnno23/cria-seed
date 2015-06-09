@@ -1,0 +1,260 @@
+body{
+background-color:white;
+}
+
+.spacer{
+height:50px;
+display:block;
+width:100%;
+background-color:pink;
+}
+
+#logo{
+    margin-top:-15px;
+}
+
+.headerbg{
+background-image: url("../img/home/header_img.jpg");	
+}
+
+
+.vlakbutton{
+	font-family: 'Roboto', sans-serif;
+	text-transform:uppercase;
+	font-size:15px;
+	border:1px solid white;
+	padding:5px;
+	font-weight:100;
+	color:white;
+	background: linear-gradient(to right, white  50%, rgba(255, 255, 255, 0) 50%);
+    background-size: 200% 100%;
+    background-position:right bottom;
+    transition:all 0.6s ease;
+	text-decoration:none;
+	
+	
+}
+
+.vlakbutton:hover{
+	color:#5bc83d;
+	text-decoration:none;
+	background-position:left bottom;
+	
+}
+
+.vlakbutton:link{
+	text-decoration:none;
+	color:white;
+}
+
+
+.lijn{
+	height:2px;
+	width:250px;
+	display:block;
+	background-color:#c9c9c9;
+	margin-bottom:-10px;
+}
+
+
+.sheight{	
+		height:150px;
+}
+
+.mheight{
+	height:300px;
+}
+
+.lheight{
+	height:385px;
+}
+
+.grnvlak{
+	background-color:#8fc748;
+	height:200px;
+	font-family: 'Roboto', sans-serif;
+	margin-top:-115px;
+	padding-left:30px;
+	padding-top:10px;
+	overflow:hidden;
+}
+.grnvlak h1{text-transform:uppercase;font-weight:300;font-size:28px;width:150px;color:white;}
+.grnvlak h2{text-transform:uppercase;font-weight:800;font-size:11px;color:white;}
+.grnvlak p{font-size:11px; font-family: 'Roboto', sans-serif; font-weight:400; color:white; line-height:2em; margin-bottom:-15px;}
+.imggroen{
+	overflow:hidden;
+	padding:0px;
+}
+.txtvlak{
+	background-color:white;
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+	padding:50px;
+}
+.txtvlak h1{
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:28px;
+	width:300px;
+	color:#8fc748;	
+}
+.txtvlak h2{
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:11px;
+}
+.txtvlak p{
+	font-weight:400;
+	font-size:11px;
+	line-height:2em;	
+}
+
+.banner{
+padding-top:90px;
+background-image: url("../img/home/banner.jpg");	
+height:400px;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+}
+
+.banner h1{
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:11px;
+	color:#8fc748;	
+}
+.banner h2{
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:28px;
+	color:#8fc748;	
+}
+
+.lijngroen{
+	height:2px;
+	width:60px;
+	display:block;
+	background-color:#8fc748;
+	margin-top:20px;
+	 margin-left: auto ;
+  margin-right: auto ;
+  margin-bottom:-15px;
+}
+
+.login_box{
+	margin-top:250px;
+	position:fixed;
+	height:400px;
+	display:none;
+	background-color:green;
+	z-index:999;	
+}
+
+
+.bannerabout{
+padding-top:90px;
+background-image: url("../img/home/bannertwee.jpg");	
+height:300px;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+}
+
+.bannerabout h1{
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:11px;
+	color:#545454;	
+}
+.bannerabout h2{
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:28px;
+	color:#545454;	
+}
+
+.bannerabout p{font-size:11px; font-family: 'Roboto', sans-serif; font-weight:400; color:white; line-height:2em; margin-bottom:-15px;
+}
+
+
+.overons{
+	font-family: 'Roboto', sans-serif;
+	text-align:left;
+}
+
+.overons h1{
+	text-transform:uppercase;
+	font-weight:800;
+	font-size:11px;
+	color:#545454;
+	line-height:0em;
+}
+
+.overons h2{
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:28px;
+	color:#8fc748;	
+	line-height:1em;
+}
+.overons p{font-size:11px; font-family: 'Roboto', sans-serif; font-weight:400; color:black; line-height:2em;}
+
+.keuze{
+	font-family: 'Roboto', sans-serif; 
+	position:fixed;
+}
+
+.keuze h1{
+	text-transform:uppercase;
+	font-weight:300;
+	font-size:28px;
+	color:white;	
+	line-height:2em;
+	font-family: 'Roboto', sans-serif; 
+}
+
+.keuze ul{
+	list-style:none;	
+}
+
+.keuze button{
+	display:block;
+	height:75px;
+	width:250px;
+	font-size:11px; font-family: 'Roboto', sans-serif; font-weight:400; color:white; line-height:7em;
+	text-align:center;
+	opacity:0.9;
+	border:0px;
+	 -webkit-transition: all 0.5s ease-in-out;
+	 -moz-transition: all 0.5s ease-in-out;
+	 -o-transition: all 0.5s ease-in-out;
+	 transition: all 0.5s ease-in-out;
+}
+
+.keuze button:hover{	
+	font-size:15px;
+	width:350px;
+	line-height:7em;
+	height:100px;
+}
+
+.keuze a:hover{
+	text-decoration:none;
+}
+
+.groen{
+	background-color:#5ae24c;
+
+}
+
+.blauw{
+	background-color:#4c73e2;
+}
+
+.geel{
+	background-color:#fcd520;
+}
+
+.paars{
+	background-color:#bb35e7;
+}
+

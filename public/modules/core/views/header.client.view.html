@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="modules/core/css/bootstrap.css">
+<link rel="stylesheet" href="modules/core/css/style.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
 <div class="container" data-ng-controller="HeaderController">
     <div class="navbar-header">
         <button class="navbar-toggle" type="button" data-ng-click="toggleCollapsibleMenu()">
@@ -6,8 +10,11 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
-        <a href="/#!/" class="navbar-brand">Animania</a>
+        <a href="/#!/" class="navbar-brand">
+                <img id="logo" src="modules/core/img/home/logo.png" alt="">
+        </a>
     </div>
+
     <nav class="collapse navbar-collapse" collapse="!isCollapsed" role="navigation">
         <ul class="nav navbar-nav" data-ng-if="menu.shouldRender(authentication.user);">
             <li data-ng-repeat="item in menu.items | orderBy: 'position'"
